@@ -1,5 +1,8 @@
 source "https://rubygems.org"
 
-gem "jekyll"
-gem "logger"
-gem "webrick", "~> 1.8"
+gem "github-pages"
+
+group :development do
+  gem "webrick"
+  gem "logger"
+end
