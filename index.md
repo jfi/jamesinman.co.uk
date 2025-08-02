@@ -20,7 +20,7 @@ id: home
 
 <section class="max-w-6xl mx-auto px-4 fade-in">
   <div class="relative flex justify-center mb-12">
-    <img src="/assets/images/headshot.jpg" alt="James Inman" class="rounded-lg shadow-lg w-full max-w-4xl h-96 object-cover object-top" />
+    <img src="{{ site.baseurl }}/assets/images/headshot.jpg" alt="James Inman" class="rounded-lg shadow-lg w-full max-w-4xl h-96 object-cover object-top" />
   </div>
 
   <div class="grid md:grid-cols-3 gap-6 relative z-10 -mt-16">
@@ -53,7 +53,7 @@ id: home
     <a href="/pages/neurobetter.html"
       class="cursor-pointer block bg-white rounded shadow border border-cardBorder overflow-hidden text-center transition transform hover:-translate-y-1 hover:shadow-2xl hover:scale-[1.02] duration-300 ease-in-out fade-in">
       <div class="w-full h-40 flex items-center justify-center p-4" style="background-color: rgb(1, 10, 73);">
-        <img src="/assets/images/neurobetter-logo.png" alt="neurobetter" class="h-16 object-contain" />
+        <img src="{{ site.baseurl }}/assets/images/neurobetter-logo.png" alt="neurobetter" class="h-16 object-contain" />
       </div>
       <div class="p-6">
         <h2 class="text-xl font-bold font-body mb-2">neurobetter</h2>
