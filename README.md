@@ -1,8 +1,4 @@
-# James Inman Jekyll Starter
-
-This is a starter Jekyll site with Tailwind CSS, ready for deployment to GitHub Pages.
-
----
+# jamesinman.co.uk
 
 ## 🚀 Getting Started
 

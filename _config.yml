@@ -1,5 +1,5 @@
 title: James Inman
 description: Personal site
-baseurl: ""
-url: ""
+baseurl: "/jamesinman.co.uk"
+url: "https://jfi.github.io"
 markdown: kramdown
