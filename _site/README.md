@@ -33,7 +33,6 @@ This will watch for changes in `assets/css/input.css` and output to `assets/css/
     ├── index.md                   # Homepage
     ├── _layouts/                  # Layout templates
     ├── _includes/                 # Header & footer partials
-    ├── pages/                     # Sub-pages (Tech for Good, Mentoring & Coaching, neurobetter)
     ├── assets/css/input.css       # Tailwind source
     ├── assets/css/main.css        # Compiled Tailwind (generated)
     └── package.json               # npm scripts for Tailwind
@@ -60,8 +59,6 @@ This will watch for changes in `assets/css/input.css` and output to `assets/css/
 ## ✅ Next Steps
 
 - Edit `index.md` to change homepage content.
-- Update service pages in `/pages/`.
 - Add images in `/assets/images/`.
-- (Optional) Customize Tailwind in `tailwind.config.js` (run `npx tailwindcss init` to create one).
 
 Happy building!

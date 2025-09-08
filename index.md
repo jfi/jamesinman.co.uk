@@ -4,16 +4,16 @@ title: Mentoring, Coaching, Digital Consultancy & Software Development
 id: home
 ---
 
-<header class="max-w-6xl mx-auto py-4 px-12 text-center fade-in">
-  <h1 class="text-5xl font-display font-normal mb-8">Hi, I’m James Inman.</h1>
-  <p class="text-xl text-secondaryText max-w-2xl mx-auto font-body mb-4">
+<header class="max-w-6xl mx-auto py-4 px-12 fade-in">
+  <h1 class="text-5xl font-display font-normal mb-8 text-center">Hi, I’m James Inman.</h1>
+  <p class="text-xl text-secondaryText mx-auto font-body mb-4">
   I work at the intersection of <strong>technology, mental health, and psychology</strong> — helping organisations and individuals make a difference through their work, and in their own lives.
   </p>
 
-  <p class="text-md text-secondaryText max-w-2xl mx-auto font-body mb-4">With over 15 years in software and leadership, I’ve founded companies from scratch, seen some acquired, and held Board-level roles running technology and product teams in international private equity‑backed businesses. I'm also late-diagnosed with Autism and ADHD, and have studied psychology and mental health intensively.
+  <p class="text-md text-secondaryText mx-auto font-body mb-4">With over 15 years in software and leadership, I’ve founded companies from scratch, seen some acquired, and held Board-level roles running technology and product teams in international private equity‑backed businesses. I'm also late-diagnosed with Autism and ADHD, and have studied psychology and mental health intensively.
   </p>
 
-  <p class="text-md text-secondaryText max-w-2xl mx-auto font-body mb-4">
+  <p class="text-md text-secondaryText mx-auto font-body mb-4">
     Not every venture went to plan, and not every choice I made was the right one. Along the way I’ve learned a great deal about resilience, perspective, and how to adapt. That experience now drives my work — helping purpose‑driven organisations solve complex problems, and supporting people as they navigate their own challenges.
   </p>
 </header>
@@ -67,7 +67,7 @@ id: home
   </div>
 </section>
 
-<section class="max-w-3xl mx-auto px-4 mt-12 fade-in">
+<section class="mx-auto px-4 mt-12 fade-in">
   <div class="bg-gray-100 border border-cardBorder rounded-xl shadow-sm p-6 text-center">
     <h3 class="text-xl font-bold mb-4">Experience & Memberships</h3>
     <ul class="text-secondaryText text-md space-y-2">

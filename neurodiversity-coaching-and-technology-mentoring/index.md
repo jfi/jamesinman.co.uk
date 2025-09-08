@@ -15,17 +15,17 @@ title: Mentoring & Coaching
     </a>
   </div>
 
-  <p class="text-xl text-secondaryText max-w-2xl mx-auto font-body mb-4">
-    Get support from someone who understands – both <strong>professionally and personally</strong> – through mentoring and coaching
+  <p class="text-xl text-secondaryText mx-auto font-body mb-4">
+    Get support from someone who understands – both <strong>professionally and personally</strong>
   </p>
 </header>
 
 <section class="max-w-6xl mx-auto px-4">
-  <p class="text-md text-secondaryText max-w-2xl mx-auto font-body mb-8">
+  <p class="text-md text-secondaryText mx-auto font-body mb-8">
     I offer 1:1 mentoring and coaching for people navigating complex transitions — whether that’s in your career, your mental health, or understanding yourself better. I work with a small number of clients at a time, and sessions are flexible, confidential, and grounded in lived experience.
   </p>
 
-  <p class="text-md text-secondaryText max-w-2xl mx-auto font-body mb-8">
+  <p class="text-md text-secondaryText mx-auto font-body mb-8">
     Here are some of the areas I focus on. As well as these, I'm a confident interview coach – I’ve interviewed over 200 people in my career and offer <strong>gentle interview coaching</strong> if you’re preparing for new roles or just want to explore what makes you tick.
   </p>
 
@@ -76,7 +76,7 @@ title: Mentoring & Coaching
     </div>
   </div>
 
-  <div class="mt-12">
+  <div class="mt-12 mb-6">
     <h2 class="text-xl font-bold font-body mb-4">FAQs</h2>
     <div class="space-y-6">
       <div>
