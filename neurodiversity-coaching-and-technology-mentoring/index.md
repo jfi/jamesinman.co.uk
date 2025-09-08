@@ -3,7 +3,7 @@ layout: default
 title: Mentoring & Coaching
 ---
 
-<header class="max-w-5xl mx-auto py-4 px-12 text-center fade-in">
+<header class="max-w-6xl mx-auto py-4 px-12 text-center fade-in">
   <a href="{{ site.baseurl }}/" class="block text-5xl font-display font-normal mb-8">James Inman</a>
 
   <div class="mb-6">
@@ -20,7 +20,7 @@ title: Mentoring & Coaching
   </p>
 </header>
 
-<section class="max-w-4xl mx-auto px-4">
+<section class="max-w-6xl mx-auto px-4">
   <p class="text-md text-secondaryText max-w-2xl mx-auto font-body mb-8">
     I offer 1:1 mentoring and coaching for people navigating complex transitions — whether that’s in your career, your mental health, or understanding yourself better. I work with a small number of clients at a time, and sessions are flexible, confidential, and grounded in lived experience.
   </p>

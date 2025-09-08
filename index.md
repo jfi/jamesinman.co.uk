@@ -4,7 +4,7 @@ title: Mentoring, Coaching, Digital Consultancy & Software Development
 id: home
 ---
 
-<header class="max-w-5xl mx-auto py-4 px-12 text-center fade-in">
+<header class="max-w-6xl mx-auto py-4 px-12 text-center fade-in">
   <h1 class="text-5xl font-display font-normal mb-8">Hi, I’m James Inman.</h1>
   <p class="text-xl text-secondaryText max-w-2xl mx-auto font-body mb-4">
   I work at the intersection of <strong>technology, mental health, and psychology</strong> — helping organisations and individuals make a difference through their work, and in their own lives.
