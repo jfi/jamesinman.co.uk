@@ -1,26 +1,23 @@
 <!doctype html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>{{ page.title }} &middot; {{ site.title }}</title>
-  <link href="{{ site.baseurl }}/assets/css/main.css" rel="stylesheet">
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500&family=Playfair+Display:wght@400;700&display=swap" rel="stylesheet">
-  <link rel="icon" type="image/png" href="{{ site.baseurl }}/assets/favicon/favicon-96x96.png" sizes="96x96" />
-  <link rel="icon" type="image/svg+xml" href="{{ site.baseurl }}/assets/favicon/favicon.svg" />
-  <link rel="shortcut icon" href="{{ site.baseurl }}/assets/favicon/favicon.ico" />
-  <link rel="apple-touch-icon" sizes="180x180" href="{{ site.baseurl }}/assets/favicon/apple-touch-icon.png" />
-  <meta name="apple-mobile-web-app-title" content="James I" />
-  <link rel="manifest" href="{{ site.baseurl }}/assets/favicon/site.webmanifest" />
-</head>
-<body class="bg-background text-primaryText font-body">
-  {% if page.id != 'home' %}
-  {% include header.html %}
-  {% endif %}
-
-  <main class="max-w-5xl mx-auto p-6">
-    {{ content }}
-  </main>
-  {% include footer.html %}
-</body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>{{ page.title }} &middot; {{ site.title }}</title>
+    <link href="{{ site.baseurl }}/assets/css/main.css" rel="stylesheet" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500&family=Playfair+Display:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="icon" type="image/png" href="{{ site.baseurl }}/assets/favicon/favicon-96x96.png" sizes="96x96" />
+    <link rel="icon" type="image/svg+xml" href="{{ site.baseurl }}/assets/favicon/favicon.svg" />
+    <link rel="shortcut icon" href="{{ site.baseurl }}/assets/favicon/favicon.ico" />
+    <link rel="apple-touch-icon" sizes="180x180" href="{{ site.baseurl }}/assets/favicon/apple-touch-icon.png" />
+    <meta name="apple-mobile-web-app-title" content="James I" />
+    <link rel="manifest" href="{{ site.baseurl }}/assets/favicon/site.webmanifest" />
+  </head>
+  <body class="bg-gradient-to-b from-[#fcfcfc] via-[#f9f9f9] to-[#f3f3f3] text-primaryText font-body">
+    <main class="max-w-5xl mx-auto p-6">{{ content }}</main>
+    {% include footer.html %}
+  </body>
 </html>

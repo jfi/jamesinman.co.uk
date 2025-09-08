@@ -1,6 +1,6 @@
 ---
 layout: default
-title: Home
+title: Mentoring, Coaching, Digital Consultancy & Software Development
 id: home
 ---
 
@@ -24,12 +24,12 @@ id: home
   </div>
 
   <div class="grid md:grid-cols-3 gap-6 relative z-10 -mt-16">
-    <a href="/pages/tech-for-good.html"
+    <a href="https://otaina.co.uk"
       class="cursor-pointer block bg-white rounded shadow border border-cardBorder overflow-hidden text-center transition transform hover:-translate-y-1 hover:shadow-2xl hover:scale-[1.02] duration-300 ease-in-out fade-in">
       <img src="https://images.unsplash.com/photo-1522071820081-009f0129c71c?w=400&h=200&fit=crop" alt="Tech For Good" class="w-full h-40 object-cover" />
       <div class="p-6">
         <h2 class="text-xl font-bold font-body mb-2">Tech For Good</h2>
-        <p class="text-sm text-secondaryText font-body mb-4">
+        <p class="text-md text-secondaryText font-body mb-4">
         I partner with charities, non‑profits, and purpose‑driven organisations to untangle complex systems and make technology work  — offering practical strategy and hands‑on support grounded in years of experience.<br><br>
 
         Whether you need clarity on your digital direction, someone to rescue a struggling project or connect systems, or the right person to guide your team through change, I can help you get there.
@@ -38,28 +38,28 @@ id: home
       </div>
     </a>
 
-    <a href="/pages/mentoring-coaching.html"
+    <a href="{{ site.baseurl }}/neurodiversity-coaching-and-technology-mentoring"
       class="cursor-pointer block bg-white rounded shadow border border-cardBorder overflow-hidden text-center transition transform hover:-translate-y-1 hover:shadow-2xl hover:scale-[1.02] duration-300 ease-in-out fade-in">
       <img src="https://images.unsplash.com/uploads/14122810486321888a497/1b0cc699?w=400&h=200&fit=crop" alt="Mentoring & Coaching" class="w-full h-40 object-cover" />
       <div class="p-6">
         <h2 class="text-xl font-bold font-body mb-2">Mentoring & Coaching</h2>
-        <p class="text-sm text-secondaryText font-body mb-4">
+        <p class="text-md text-secondaryText font-body mb-4">
         I work one‑on‑one with people who need clarity, direction, and someone who truly “gets it” — mentoring and coaching rooted in lived experience of leadership, neurodiversity, and rebuilding after challenge.<br><br>
-        Whether you’re navigating the demands of leadership, trying to “fit in” while understanding your neurodivergence, or working out your next steps, I can help you find perspective and a plan.</p>
+        Whether you’re navigating the demands of technology leadership, trying to “fit in” whilst understanding your autism or ADHD, or working out your next career steps, I can help you find perspective and make a plan for what's next.</p>
         <span class="text-accentPink hover:text-accentPinkHover text-sm font-medium font-body">Learn more</span>
       </div>
     </a>
 
-    <a href="/pages/neurobetter.html"
+    <a href="https://neurobetter.org"
       class="cursor-pointer block bg-white rounded shadow border border-cardBorder overflow-hidden text-center transition transform hover:-translate-y-1 hover:shadow-2xl hover:scale-[1.02] duration-300 ease-in-out fade-in">
       <div class="w-full h-40 flex items-center justify-center p-4" style="background-color: rgb(1, 10, 73);">
         <img src="{{ site.baseurl }}/assets/images/neurobetter-logo.png" alt="neurobetter" class="h-16 object-contain" />
       </div>
       <div class="p-6">
         <h2 class="text-xl font-bold font-body mb-2">neurobetter</h2>
-        <p class="text-sm text-secondaryText font-body mb-4">
-        I'm the founder of neurobetter, a new charity supporting neurodivergent people with their mental health — through training, resources, and advocacy built on lived experience and evidence‑based practice.<br><br>
-        Whether you’re an organisation looking to create a truly inclusive culture, or an individual seeking support around mental health and neurodiversity, neurobetter is here to help.
+        <p class="text-md text-secondaryText font-body mb-4">
+        I'm the Founding Trustee of neurobetter, a new charity supporting neurodivergent people with their mental health — through training, resources, and advocacy built on lived experience and evidence‑based practice.<br><br>
+        Whether you’re an organisation looking to create a truly inclusive culture, or you're seeking support around mental health and neurodiversity for yourself or someone you know, neurobetter is here to help.
         </p>
         <span class="text-accentPink hover:text-accentPinkHover text-sm font-medium font-body">Learn more</span>
       </div>
@@ -68,25 +68,32 @@ id: home
 </section>
 
 <section class="max-w-3xl mx-auto px-4 mt-12 fade-in">
-  <div class="bg-gray-50 border border-cardBorder rounded-xl shadow-sm p-6 text-center">
-    <h3 class="text-lg font-semibold mb-4">Experience & Memberships</h3>
-    <ul class="text-secondaryText text-sm space-y-2">
+  <div class="bg-gray-100 border border-cardBorder rounded-xl shadow-sm p-6 text-center">
+    <h3 class="text-xl font-bold mb-4">Experience & Memberships</h3>
+    <ul class="text-secondaryText text-md space-y-2">
       <li>Member of the British Computer Society (MBCS)</li>
       <li>Member of the Royal Society of Public Health (MRSPH)</li>
       <li>Student Member of the British Psychological Society (BPS)</li>
+      <br><hr><br>
       <li>MSc Psychology <small>(awaiting award)</small></li>
       <li>LLB (Hons) undergraduate degree in Law</li>
+      <li>Level 2 Certificate in Introduction To Counselling</li>
+      <li>Level 2 Certificate in Self-Harm and Suicide Awareness and Prevention</li>
     </ul>
   </div>
 </section>
 
 <section class="max-w-3xl mx-auto px-4 py-16 text-center fade-in">
-  <h2 class="text-2xl font-semibold font-display mb-4">Let’s connect</h2>
+  <h2 class="text-xl font-bold mb-4">Contact Me</h2>
   <p class="text-md text-secondaryText font-body mb-6">
-    Want to talk through a project, explore mentoring, or discuss a collaboration? Book a time with me directly.
+    Want to talk through a project, explore mentoring and coaching, or discuss a collaboration?<br><br>Book a call with me directly, or email me:
   </p>
-  <a href="https://calendly.com/james-inman" target="_blank" rel="noopener"
+  <a href="https://tidycal.com/jamesinman/20-minute-introduction-call" target="_blank" rel="noopener"
+    class="inline-block bg-callToAction hover:bg-callToActionHover text-white font-medium py-3 px-6 mr-4 rounded shadow font-body">
+    Book A Call
+  </a>
+  <a href="mailto:james@jamesinman.co.uk"
     class="inline-block bg-callToAction hover:bg-callToActionHover text-white font-medium py-3 px-6 rounded shadow font-body">
-    Book a Call
+    Email Me
   </a>
 </section>
