@@ -3,114 +3,187 @@ layout: default
 title: Mentoring & Coaching
 ---
 
-<header class="max-w-6xl mx-auto py-4 px-12 text-center fade-in">
-  <a href="{{ site.baseurl }}/" class="block text-5xl font-display font-normal mb-8">James Inman</a>
+{% include header.html %}
 
-  <div class="mb-6">
-    <a href="{{ site.baseurl }}/" class="text-accentPink hover:text-accentPinkHover text-sm font-medium font-body inline-block px-4">About Me</a>
-    <a href="{{ site.baseurl }}/neurodiversity-coaching-and-technology-mentoring" class="text-accentPink hover:text-accentPinkHover text-sm font-medium font-body inline-block px-4">Mentoring &amp; Coaching</a>
-    <a href="https://tidycal.com/jamesinman/20-minute-introduction-call" class="text-accentPink hover:text-accentPinkHover text-sm font-medium font-body inline-block px-4">Book A Call</a>
-    <a href="mailto:james@jamesinman.co.uk" class="text-accentPink hover:text-accentPinkHover text-sm font-medium font-body inline-block px-4">
-      Email Me
-    </a>
+<!-- Hero Section -->
+<header class="mb-16">
+  <div class="grid md:grid-cols-2 gap-12 mb-16">
+    <div class="flex flex-col justify-between">
+      <h1 class="text-[60px] font-display font-medium mb-8 leading-[97%] tracking-[-0.03em]">Mentoring & Coaching.</h1>
+      <div class="flex items-center h-[48px]">
+        <svg width="28" height="44" viewBox="0 0 28 44" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path d="M14 0L14 36M14 36L8 30M14 36L20 30" stroke="currentColor" stroke-width="3.5"/>
+        </svg>
+      </div>
+    </div>
+    <div class="flex flex-col justify-between">
+      <p class="text-[32px] text-secondaryText font-sans font-normal mb-6 leading-[1.55] tracking-[-0.03em]">
+        Get support from someone who understands — both <strong>professionally</strong> and <strong>personally</strong>. I can help you navigate challenges or complex transitions, and gain insight into your strengths.
+      </p>
+      <div class="flex gap-4">
+        <a href="https://tidycal.com/jamesinman/20-minute-introduction-call" target="_blank" rel="noopener"
+          class="inline-block bg-[#010A49] hover:opacity-90 text-white font-medium py-3 px-6 font-body text-base transition">
+          Book a call →
+        </a>
+        <a href="mailto:james@jamesinman.co.uk"
+          class="inline-block text-primaryText hover:opacity-70 py-3 px-6 font-body text-base transition">
+          Email me →
+        </a>
+      </div>
+    </div>
   </div>
-
-  <p class="text-xl text-secondaryText mx-auto font-body mb-4">
-    Get support from someone who understands – both <strong>professionally and personally</strong>
-  </p>
 </header>
 
-<section class="max-w-6xl mx-auto px-4">
-  <p class="text-md text-secondaryText mx-auto font-body mb-8">
-    I offer 1:1 mentoring and coaching for people navigating complex transitions — whether that’s in your career, your mental health, or understanding yourself better. I work with a small number of clients at a time, and sessions are flexible, confidential, and grounded in lived experience.
-  </p>
-
-  <p class="text-md text-secondaryText mx-auto font-body mb-8">
-    Here are some of the areas I focus on. As well as these, I'm a confident interview coach – I’ve interviewed over 200 people in my career and offer <strong>gentle interview coaching</strong> if you’re preparing for new roles or just want to explore what makes you tick.
-  </p>
-
-  <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
-    <div class="bg-white rounded shadow border border-cardBorder overflow-hidden text-center transition transform hover:-translate-y-1 hover:shadow-2xl hover:scale-[1.02] duration-300 ease-in-out">
-      <div class="p-6">
-        <h2 class="text-xl font-bold font-body mb-2">ADHD, Autism & Neurodiversity</h2>
-        <p class="text-md text-secondaryText font-body mb-4">
-          <strong>Support for neurodivergent people — from someone who’s walked a similar path</strong><br><br>
-          You might be newly diagnosed or just starting to make sense of your neurodivergence. You might be trying to unpick how burnout, masking, or past roles have affected you.<br><br>Or you might simply want someone who can listen, get it, and help you find clarity — without pressure to mask, perform or explain yourself.<br><br>
-          I bring a neuroaffirming approach informed by deep psychological study and lived experience of late diagnosis. My Psychology MSc dissertation was focused on interpersonal touch, and I understand the history of growing up with, and without, knowing you're neurodivergent.
-        </p>
-      </div>
-    </div>
-
-    <div class="bg-white rounded shadow border border-cardBorder overflow-hidden text-center transition transform hover:-translate-y-1 hover:shadow-2xl hover:scale-[1.02] duration-300 ease-in-out">
-      <div class="p-6">
-        <h2 class="text-xl font-bold font-body mb-2">Technology Professionals</h2>
-        <p class="text-md text-secondaryText font-body mb-4">
-          <strong>Helping people in tech navigate burnout, big decisions, or complex environments</strong><br><br>
-          I’ve spent 15+ years working across tech — as a founder, developer, CTO and CPO. I know what it’s like to work in high-stakes environments, manage the weight of leadership, or feel stuck in a career that once excited you. I also know the pull of flow state — and how it can lead to 12-hour (and longer) days chasing completion, even when it’s costing you your health or relationships.<br><br>
-          I offer space to step back, get perspective, and figure out what’s next — whether you’re changing role, returning to an old one, or working out whether the culture around you is still sustainable.
-        </p>
-      </div>
-    </div>
+<!-- Photo and Intro Section -->
+<section class="grid md:grid-cols-2 gap-12 mb-16 items-start">
+  <div>
+    <img src="{{ site.baseurl }}/assets/images/headshot-2.jpg" alt="James Inman" class="w-full h-[400px] object-cover object-center rounded" />
   </div>
-
-  <div class="mt-12 bg-gray-100 border border-cardBorder rounded p-6">
-    <h2 class="text-xl font-bold font-body mb-2">Pricing & Booking</h2>
-    <p class="text-md text-secondaryText font-body mb-4">
-      Sessions last one hour (60 minutes) via Zoom. I’ll usually ask for cameras on at the start just to say hello — but you’re free to turn them off if that feels more comfortable.<br><br>We can also split sessions into two  blocks with a break if an hour feels too long to focus for.<br><br>
-      Sessions are available <strong>weekly</strong> or <strong>fortnightly</strong> at flexible times to suit you, including evenings and weekends.
-      Most people benefit from a block of 6 sessions to explore a specific issue. For deeper transitions or long-term changes, 10–12 sessions often means you can see meaningful progress and reflection.<br><br>
-      I offer a discounted price for booking a block of 6 sessions at once, but can also setup payment plans so you can spread the cost of sessions.
+  <div class="flex flex-col justify-between h-[400px]">
+    <p class="text-lg text-secondaryText font-body font-normal leading-[1.55]">
+      I offer 1:1 mentoring and coaching for people navigating complex transitions — whether that's in your career, your life, or understanding yourself better. I work with a small number of clients at a time, and sessions are flexible, confidential, and grounded in lived experience.
     </p>
-    <div class="flex flex-col sm:flex-row gap-4 mb-4">
-      <a href="https://tidycal.com/jamesinman/20-minute-introduction-call" target="_blank" rel="noopener" class="inline-block bg-callToAction hover:bg-callToActionHover text-white font-medium py-3 px-6 mr-4 rounded shadow font-body">
-        Book 1 Session: £125
-      </a>
+    <p class="text-lg text-secondaryText font-body font-normal leading-[1.55]">
+      Whether you're dealing with neurodiversity (such as ADHD, autism, dyslexia, dyspraxia), or you're working in a high-stakes environment and feel like you're juggling all the time, I can help you navigate the challenges and opportunities that come with it.
+    </p>
+    <p class="text-lg text-secondaryText font-body font-normal leading-[1.55]">
+      I also offer a seminar/group workshop focused on resilience. For details of corporate neurodiversity training I offer, please visit <a href="https://neurobetter.org/" class="text-primaryText hover:text-primaryTextHover font-bold underline">neurobetter</a>.
+    </p>
+  </div>
+</section>
 
-      <a href="https://tidycal.com/jamesinman/20-minute-introduction-call" target="_blank" rel="noopener" class="inline-block bg-callToAction hover:bg-callToActionHover text-white font-medium py-3 px-6 mr-4 rounded shadow font-body">
-        Book 6 Sessions: £550
-      </a>
+<hr class="border-t border-cardBorder mb-20">
 
-      <a href="https://tidycal.com/jamesinman/20-minute-introduction-call" target="_blank" rel="noopener" class="inline-block bg-callToAction hover:bg-callToActionHover text-white font-medium py-3 px-6 mr-4 rounded shadow font-body">
-        Book Free 20-Minute Intro Call
-      </a>
-    </div>
+<!-- Service Areas -->
+<section class="grid md:grid-cols-2 gap-12 mb-20">
+  <div>
+    <h2 class="text-[20px] font-body font-medium mb-4 uppercase leading-[122%] tracking-[-0.03em]">ADHD, Autism & Neurodiversity</h2>
+    <p class="text-lg text-secondaryText font-body mb-4 leading-relaxed">
+      <strong>Support for neurodivergent people — from someone who's walked a similar path</strong>
+    </p>
+    <p class="text-lg text-secondaryText font-body leading-relaxed">
+      You might be newly diagnosed or just starting to make sense of your neurodivergence. You might be trying to unpick how burnout, masking, or past roles have affected you. Or you might simply want someone who can listen, get it, and help you find clarity — without pressure to mask, perform or explain yourself.
+    </p>
+    <p class="text-lg text-secondaryText font-body leading-relaxed mt-4">
+      I bring a neuroaffirming approach informed by deep psychological study and lived experience of late diagnosis. My Psychology MSc dissertation was focused on interpersonal touch, and I understand the history of growing up with, and without, knowing you're neurodivergent.
+    </p>
   </div>
 
-  <div class="mt-12 mb-6">
-    <h2 class="text-xl font-bold font-body mb-4">FAQs</h2>
-    <div class="space-y-6">
-      <div>
-        <h3 class="font-semibold font-body">Do I need a diagnosis to work with you?</h3>
-        <p class="text-md text-secondaryText font-body">No. I work with clients regardless of whether you're neurodivergent or not — and self-identified, questioning, or formally diagnosed. You don’t need a label to be supported.</p>
-      </div>
-      <div>
-        <h3 class="font-semibold font-body">How do I pay for sessions?</h3>
-        <p class="text-md text-secondaryText font-body">Payment is through the buttons above using a credit or debit card before your session(s) take place. You can also set up a direct debit if that's easier for you. I accept <strong>Access to Work</strong> funding, and am happy to invoice employers.<br><br>If you're genuinely struggling with the price of sessions (for example, you're unemployed and not in receipt of benefits) but would like to access my services, I can offer some discretionary discounts: <a href="mailto:james@jamesinman.co.uk" class="font-bold text-accentPink hover:text-accentPinkHover underline">email me</a> for more information.</p>
-      </div>
-      <div>
-        <h3 class="font-semibold font-body">Do I have to keep my camera on?</h3>
-        <p class="text-md text-secondaryText font-body">No. You’re welcome to turn your camera off after we say hello — unless we’re doing something like interview coaching where face-to-face might help.</p>
-      </div>
-      <div>
-        <h3 class="font-semibold font-body">Is this coaching or therapy?</h3>
-        <p class="text-md text-secondaryText font-body">This is mentoring and coaching, not therapy. Our focus will be future-facing, practical, and supportive. If you’re unsure what’s right for you, we can explore that in an intro call.</p>
-      </div>
-      <div>
-        <h3 class="font-semibold font-body">Can you help with my mental health?</h3>
-        <p class="text-md text-secondaryText font-body">I'm not a trained mental health professional. If you're struggling with your mental health, you should contact your GP or another mental health professional – if you're in crisis, call 999 or 111 option 2. <a class="underline text-accentPink hover:text-accentPinkHover font-bold" href="https://www.mind.org.uk/need-urgent-help/using-this-tool/">Mind</a> have some resources which may be able to help you.</p>
-      </div>
-      <div>
-        <h3 class="font-semibold font-body">Who do you work with?</h3>
-        <p class="text-md text-secondaryText font-body">I work with adults of all backgrounds, genders, and identities. My practice is inclusive and affirming — and I’ll do my best to meet your access needs wherever possible.</p>
-      </div>
-      <div>
-        <h3 class="font-semibold font-body">What’s your approach like?</h3>
-        <p class="text-md text-secondaryText font-body">Warm, structured, and collaborative. I won’t overwhelm you with theory, but I may offer frameworks from my background in psychology, leadership, and mental health. You’ll be met with respect, care, and no pressure to be anything other than yourself.</p>
-      </div>
-      <div>
-        <h3 class="font-semibold font-body">I've got more questions</h3>
-        <p class="text-md text-secondaryText font-body">That's completely understandable - embarking on a new mentoring/coaching programme, especially for the first time, can be scary! Feel free to <a href="mailto:james@jamesinman.co.uk" class="font-bold text-accentPink hover:text-accentPinkHover underline">email me</a> or <a href="https://tidycal.com/jamesinman/20-minute-introduction-call" class="font-bold text-accentPink hover:text-accentPinkHover underline">book in a free 20-minute intro call</a> to discuss further.</p>
-      </div>
+  <div>
+    <h2 class="text-[20px] font-body font-medium mb-4 uppercase leading-[122%] tracking-[-0.03em]">Technology Professionals</h2>
+    <p class="text-lg text-secondaryText font-body mb-4 leading-relaxed">
+      <strong>Helping people in tech navigate burnout, big decisions, or complex environments</strong>
+    </p>
+    <p class="text-lg text-secondaryText font-body leading-relaxed">
+      I've spent 15+ years working across tech — as a founder, developer, CTO and CPO. I know what it's like to work in high-stakes environments, manage the weight of leadership with 100+ direct reports, or feel stuck in a career that once excited you. I also know the pull of flow state — and how it can lead to 12-hour (and longer) days chasing completion, even when it's costing you your health or relationships.
+    </p>
+    <p class="text-lg text-secondaryText font-body leading-relaxed mt-4">
+      I offer space to step back, get perspective, and figure out what's next — whether you're changing role, returning to an old one, or working out whether the culture around you is still sustainable.
+    </p>
+  </div>
+</section>
+
+<hr class="border-t border-cardBorder mb-20">
+
+<!-- Service Areas -->
+<section class="grid md:grid-cols-2 gap-12 mb-20">
+  <div>
+    <h2 class="text-[20px] font-body font-medium mb-4 uppercase leading-[122%] tracking-[-0.03em]">Neurodivergent Interview Coaching</h2>
+    <p class="text-lg text-secondaryText font-body mb-4 leading-relaxed">
+      <strong>Interviews can be daunting — but with the right preparation, you can feel confident and prepared</strong>
+    </p>
+    <p class="text-lg text-secondaryText font-body leading-relaxed mb-4">
+      I've interviewed over 200 people in my career, and been a candidate too. I offer gentle interview coaching to help you feel confident and prepared for your next interview.
+    </p>
+    <p class="text-lg text-secondaryText font-body leading-relaxed">
+      I can work with you to identify your strengths, practice common interview questions and look at any areas you might need support with. I've also seen every aspect of disclosure come up in a recruitment process, and can work through this difficult issue with you of "what" and "when" to tell a potential employer.
+    </p>
+  </div>
+
+  <div>
+    <h2 class="text-[20px] font-body font-medium mb-4 uppercase leading-[122%] tracking-[-0.03em]">"Resilience & Bouncing Back" Seminar</h2>
+    <p class="text-lg text-secondaryText font-body mb-4 leading-relaxed">
+      <strong>Ideal for businesses and small groups — a practical guide for overcoming challenges</strong>
+    </p>
+    <p class="text-lg text-secondaryText font-body leading-relaxed">
+      Drawing on my own experiences, thoughts from public figures, and some of the things I've learnt along the way. A story of fidget toys, numbers, grief and success — leaving attendees inspired, and with the tools to bounce back.
+    </p>
+    <p class="text-lg text-secondaryText font-body leading-relaxed mt-4">
+      I've delivered this on a handful of occasions and have always had great feedback, but it will need tailoring to your audience! Works best with business/team leaders, neurodivergent groups, or technologists. <span class="italic">Delivered in person only, half day session.</span>
+    </p>
+  </div>
+</section>
+
+<hr class="border-t border-cardBorder mb-20">
+
+<!-- Pricing Section -->
+<section class="mb-20">
+  <h2 class="text-[20px] font-body font-medium mb-6 uppercase leading-[122%] tracking-[-0.03em]">Pricing & Booking</h2>
+  <p class="text-lg text-secondaryText font-body mb-4 leading-relaxed">
+    1:1 sessions last one hour (60 minutes) via Zoom. I'll usually ask for cameras on at the start just to say hello — but you're free to turn them off if that feels more comfortable. We can also split sessions into two blocks with a break if an hour feels too long to focus for.
+  </p>
+  <p class="text-lg text-secondaryText font-body mb-6 leading-relaxed">
+    Sessions are available <strong>weekly</strong> or <strong>fortnightly</strong> at flexible times to suit you, including evenings and weekends. Most people benefit from a block of 6 sessions to explore a specific issue. For deeper transitions or long-term changes, 10–12 sessions often means you can see meaningful progress and reflection.
+  </p>
+  <p class="text-lg text-secondaryText font-body mb-6 leading-relaxed">
+    I offer a discounted price for booking a block of 6 sessions at once, but can also setup payment plans so you can spread the cost of sessions.
+  </p>
+  <div class="flex flex-col sm:flex-row gap-4 mb-4">
+    <a href="https://tidycal.com/jamesinman/single-mentoring-coaching-session" target="_blank" rel="noopener" class="inline-block bg-[#010A49] hover:opacity-90 text-white font-medium py-3 px-6 font-body text-base transition">
+      Book 1 Session: £125 →
+    </a>
+    <a href="https://tidycal.com/jamesinman/6-mentoring-coaching-session-offer" target="_blank" rel="noopener" class="inline-block bg-[#010A49] hover:opacity-90 text-white font-medium py-3 px-6 font-body text-base transition">
+      Book 6 Sessions: £550 →
+    </a>
+    <a href="https://tidycal.com/jamesinman/20-minute-introduction-call" target="_blank" rel="noopener" class="inline-block bg-white border border-primaryText hover:bg-gray-50 text-primaryText font-medium py-3 px-6 font-body text-base transition">
+      Book a free 20-minute intro call →
+    </a>
+  </div>
+  <p class="text-lg text-secondaryText font-body mb-6 mt-6 leading-relaxed">
+    1:1 in person sessions (in Essex, and East or Central London) are available depending on availability, but may be charged at a higher rate for travel expenses. My seminars are available in person only (priced on request), but I can deliver these nationwide depending on arrangements. Please <a href="mailto:james@jamesinman.co.uk" class="font-bold hover:opacity-70 underline">email me</a> or <a href="https://tidycal.com/jamesinman/20-minute-introduction-call" class="font-bold hover:opacity-70 underline">book in an intro call</a> to talk through your requirements.
+  </p>
+</section>
+
+<hr class="border-t border-cardBorder mb-20">
+
+<!-- FAQs Section -->
+<section class="mb-20">
+  <h2 class="text-[20px] font-body font-medium mb-6 uppercase leading-[122%] tracking-[-0.03em]">FAQs</h2>
+  <div class="space-y-6">
+    <div>
+      <h3 class="text-lg font-semibold font-body mb-2">Do you only work with neurodivergent people? Do I need a diagnosis to work with you?</h3>
+      <p class="text-lg text-secondaryText font-body leading-relaxed">No. I work with clients regardless of whether you're neurodivergent or not — and self-identified, questioning, or formally diagnosed. You don't need a label to be supported.</p>
+    </div>
+    <div>
+      <h3 class="text-lg font-semibold font-body mb-2">How do I pay for sessions?</h3>
+      <p class="text-lg text-secondaryText font-body leading-relaxed">Payment is through the buttons above using a credit or debit card before your session(s) take place. You can also set up a direct debit if that's easier for you. I accept <strong>Access to Work</strong> funding, and am happy to invoice employers.</p>
+      <p class="text-lg text-secondaryText font-body leading-relaxed mt-2">If you're genuinely struggling with the price of sessions (for example, you're unemployed and not in receipt of benefits) but would like to access my services, I can offer some discretionary discounts: <a href="mailto:james@jamesinman.co.uk" class="font-bold hover:opacity-70 underline">email me</a> for more information.</p>
+    </div>
+    <div>
+      <h3 class="text-lg font-semibold font-body mb-2">Do I have to keep my camera on?</h3>
+      <p class="text-lg text-secondaryText font-body leading-relaxed">No. You're welcome to turn your camera off after we say hello — unless we're doing something like interview coaching where face-to-face might help.</p>
+    </div>
+    <div>
+      <h3 class="text-lg font-semibold font-body mb-2">Is this coaching or therapy?</h3>
+      <p class="text-lg text-secondaryText font-body leading-relaxed">This is mentoring and coaching, not therapy. Our focus will be future-facing, practical, and supportive. If you're unsure what's right for you, we can explore that in an intro call.</p>
+    </div>
+    <div>
+      <h3 class="text-lg font-semibold font-body mb-2">Can you help with my mental health?</h3>
+      <p class="text-lg text-secondaryText font-body leading-relaxed">I'm not a trained mental health professional. If you're struggling with your mental health, you should contact your GP or another mental health professional – if you're in crisis, call 999 or 111 option 2. <a class="underline hover:opacity-70 font-bold" href="https://www.mind.org.uk/need-urgent-help/using-this-tool/">Mind</a> have some resources which may be able to help you.</p>
+    </div>
+    <div>
+      <h3 class="text-lg font-semibold font-body mb-2">Who do you work with?</h3>
+      <p class="text-lg text-secondaryText font-body leading-relaxed">I work with adults of all backgrounds, genders, and identities. My practice is inclusive and affirming — and I'll do my best to meet your access needs wherever possible.</p>
+    </div>
+    <div>
+      <h3 class="text-lg font-semibold font-body mb-2">What's your approach like?</h3>
+      <p class="text-lg text-secondaryText font-body leading-relaxed">Warm, structured, and collaborative. I won't overwhelm you with theory, but I may offer frameworks from my background in psychology, leadership, and mental health. You'll be met with respect, care, and no pressure to be anything other than yourself.</p>
+    </div>
+    <div>
+      <h3 class="text-lg font-semibold font-body mb-2">I've got more questions</h3>
+      <p class="text-lg text-secondaryText font-body leading-relaxed">That's completely understandable - embarking on a new mentoring/coaching programme, especially for the first time, can be scary! Feel free to <a href="mailto:james@jamesinman.co.uk" class="font-bold hover:opacity-70 underline">email me</a> or <a href="https://tidycal.com/jamesinman/20-minute-introduction-call" class="font-bold hover:opacity-70 underline">book in a free 20-minute intro call</a> to discuss further.</p>
     </div>
   </div>
 </section>
+
+{% include footer-cta.html %}
