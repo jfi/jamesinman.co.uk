@@ -1,24 +1,15 @@
 <!-- Logo and Navigation -->
 <div class="grid md:grid-cols-2 gap-12 mb-20 items-center">
-  <div class="text-3xl font-display"><a href="{{ site.baseurl }}/">JI.</a></div>
-  <nav>
+  <div class="text-3xl font-display"><a href="{{ site.baseurl }}/" aria-label="James Inman home" class="focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-primaryText transition-opacity hover:opacity-70">JI.</a></div>
+  <nav aria-label="Main navigation">
     <ul class="flex gap-8 text-[21px] font-medium leading-[120%] tracking-[-0.03em]">
+      {% for item in site.navigation %}
       <li>
-        <a href="{{ site.baseurl }}/">
-          <span
-            class="hover:border-b-2 hover:border-primaryText pb-1 pr-0.5 {% if page.id == 'home' %}border-b-2 border-primaryText{% endif %}"
-            >About</span
-          ><span class="ml-0.25">.</span>
+        <a href="{{ site.baseurl }}{{ item.url }}" {% if item.page_id and page.id == item.page_id %}aria-current="page"{% elsif item.page_title and page.title == item.page_title %}aria-current="page"{% endif %} class="focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-primaryText">
+          <span class="hover:border-b-2 hover:border-primaryText pb-1 pr-0.5 transition-all {% if item.page_id and page.id == item.page_id %}border-b-2 border-primaryText{% elsif item.page_title and page.title == item.page_title %}border-b-2 border-primaryText{% endif %}">{{ item.title }}</span><span class="ml-0.25">.</span>
         </a>
       </li>
-      <li>
-        <a href="{{ site.baseurl }}/neurodiversity-coaching-and-technology-mentoring">
-          <span
-            class="hover:border-b-2 hover:border-primaryText pb-1 pr-0.5 {% if page.title == 'Mentoring & Coaching' %}border-b-2 border-primaryText{% endif %}"
-            >Mentoring &amp; Coaching</span
-          ><span class="ml-0.25">.</span>
-        </a>
-      </li>
+      {% endfor %}
     </ul>
   </nav>
 </div>

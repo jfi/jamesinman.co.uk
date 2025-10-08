@@ -3,3 +3,14 @@ description: technology, mental health, and psychology
 baseurl: ''
 url: 'https://jamesinman.co.uk'
 markdown: kramdown
+
+navigation:
+  - title: About
+    url: /
+    page_id: home
+  - title: Mentoring & Coaching
+    url: /neurodiversity-coaching-and-technology-mentoring
+    page_title: Mentoring & Coaching
+  - title: LinkedIn
+    url: https://www.linkedin.com/in/jamesfinman/
+    page_title: LinkedIn

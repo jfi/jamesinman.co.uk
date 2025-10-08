@@ -11,9 +11,11 @@ title: Mentoring & Coaching
     <div class="flex flex-col justify-between">
       <h1 class="text-[60px] font-display font-medium mb-8 leading-[97%] tracking-[-0.03em]">Mentoring & Coaching.</h1>
       <div class="flex items-center h-[48px]">
-        <svg width="28" height="44" viewBox="0 0 28 44" fill="none" xmlns="http://www.w3.org/2000/svg">
-          <path d="M14 0L14 36M14 36L8 30M14 36L20 30" stroke="currentColor" stroke-width="3.5"/>
-        </svg>
+        <a href="#intro-section" class="hover:opacity-70 transition-opacity cursor-pointer" aria-label="Scroll to introduction section">
+          <svg width="28" height="44" viewBox="0 0 28 44" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+            <path d="M14 0L14 36M14 36L8 30M14 36L20 30" stroke="currentColor" stroke-width="3.5"/>
+          </svg>
+        </a>
       </div>
     </div>
     <div class="flex flex-col justify-between">
@@ -22,11 +24,11 @@ title: Mentoring & Coaching
       </p>
       <div class="flex gap-4">
         <a href="https://tidycal.com/jamesinman/20-minute-introduction-call" target="_blank" rel="noopener"
-          class="inline-block bg-[#010A49] hover:opacity-90 text-white font-medium py-3 px-6 font-body text-base transition">
+          class="inline-block bg-[#010A49] hover:opacity-90 text-white font-medium py-3 px-6 font-body text-base transition-all hover:shadow-lg focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-primaryText">
           Book a call →
         </a>
         <a href="mailto:james@wilderotter.co.uk"
-          class="inline-block text-primaryText hover:opacity-70 py-3 px-6 font-body text-base transition">
+          class="inline-block text-primaryText hover:opacity-70 py-3 px-6 font-body text-base transition-opacity focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-primaryText">
           Email me →
         </a>
       </div>
@@ -35,7 +37,7 @@ title: Mentoring & Coaching
 </header>
 
 <!-- Photo and Intro Section -->
-<section class="grid md:grid-cols-2 gap-12 mb-16 items-start">
+<section id="intro-section" class="grid md:grid-cols-2 gap-12 mb-16 items-start">
   <div>
     <img src="{{ site.baseurl }}/assets/images/headshot-2.jpg" alt="James Inman" class="w-full h-[400px] object-cover object-center rounded" />
   </div>
@@ -129,13 +131,13 @@ title: Mentoring & Coaching
     I offer a discounted price for booking a block of 6 sessions at once, but can also setup payment plans so you can spread the cost of sessions.
   </p>
   <div class="flex flex-col sm:flex-row gap-4 mb-4">
-    <a href="https://tidycal.com/jamesinman/single-mentoring-coaching-session" target="_blank" rel="noopener" class="inline-block bg-[#010A49] hover:opacity-90 text-white font-medium py-3 px-6 font-body text-base transition">
+    <a href="https://tidycal.com/jamesinman/single-mentoring-coaching-session" target="_blank" rel="noopener" class="inline-block bg-[#010A49] hover:opacity-90 text-white font-medium py-3 px-6 font-body text-base transition-all hover:shadow-lg focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-primaryText">
       Book 1 Session: £125 →
     </a>
-    <a href="https://tidycal.com/jamesinman/6-mentoring-coaching-session-offer" target="_blank" rel="noopener" class="inline-block bg-[#010A49] hover:opacity-90 text-white font-medium py-3 px-6 font-body text-base transition">
+    <a href="https://tidycal.com/jamesinman/6-mentoring-coaching-session-offer" target="_blank" rel="noopener" class="inline-block bg-[#010A49] hover:opacity-90 text-white font-medium py-3 px-6 font-body text-base transition-all hover:shadow-lg focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-primaryText">
       Book 6 Sessions: £550 →
     </a>
-    <a href="https://tidycal.com/jamesinman/20-minute-introduction-call" target="_blank" rel="noopener" class="inline-block bg-white border border-primaryText hover:bg-gray-50 text-primaryText font-medium py-3 px-6 font-body text-base transition">
+    <a href="https://tidycal.com/jamesinman/20-minute-introduction-call" target="_blank" rel="noopener" class="inline-block bg-white border border-primaryText hover:bg-gray-50 text-primaryText font-medium py-3 px-6 font-body text-base transition-all hover:shadow-md focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-primaryText">
       Book a free 20-minute intro call →
     </a>
   </div>

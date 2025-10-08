@@ -22,9 +22,33 @@
         ClientId: null,
       })
     </script>
+    <script>
+      document.addEventListener('DOMContentLoaded', function() {
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+          anchor.addEventListener('click', function (e) {
+            const href = this.getAttribute('href');
+            if (href === '#') return;
+
+            const target = document.querySelector(href);
+            if (target) {
+              e.preventDefault();
+              target.scrollIntoView({
+                behavior: 'smooth',
+                block: 'start'
+              });
+            }
+          });
+        });
+      });
+    </script>
   </head>
-  <body class="bg-[#F3F3F3] text-primaryText font-body">
-    <main class="max-w-5xl mx-auto p-6">{{ content }}</main>
+  <body class="bg-[#F3F3F3] text-primaryText font-body" id="top">
+    <a
+      href="#main-content"
+      class="fixed left-0 top-0 z-50 bg-[#010A49] text-white px-4 py-2 -translate-y-full focus:translate-y-0 transition-transform"
+      >Skip to main content</a
+    >
+    <main id="main-content" class="max-w-5xl mx-auto p-6">{{ content }}</main>
     {% include footer.html %}
   </body>
 </html>
