@@ -1,6 +1,6 @@
 ---
 layout: default
-title: Mentoring, Coaching, Digital Consultancy & Software Development
+title: Mentoring, Coaching, Neurodiversity & Tech-For-Good
 id: home
 ---
 

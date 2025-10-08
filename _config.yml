@@ -1,5 +1,5 @@
 title: James Inman
-description: Personal site
-baseurl: "/jamesinman.co.uk"
-url: "https://jfi.github.io"
+description: technology, mental health, and psychology
+baseurl: ''
+url: 'https://jamesinman.co.uk'
 markdown: kramdown
