@@ -25,7 +25,7 @@ title: Mentoring & Coaching
           class="inline-block bg-[#010A49] hover:opacity-90 text-white font-medium py-3 px-6 font-body text-base transition">
           Book a call →
         </a>
-        <a href="mailto:james@jamesinman.co.uk"
+        <a href="mailto:james@wilderotter.co.uk"
           class="inline-block text-primaryText hover:opacity-70 py-3 px-6 font-body text-base transition">
           Email me →
         </a>
@@ -140,7 +140,7 @@ title: Mentoring & Coaching
     </a>
   </div>
   <p class="text-lg text-secondaryText font-body mb-6 mt-6 leading-relaxed">
-    1:1 in person sessions (in Essex, and East or Central London) are available depending on availability, but may be charged at a higher rate for travel expenses. My seminars are available in person only (priced on request), but I can deliver these nationwide depending on arrangements. Please <a href="mailto:james@jamesinman.co.uk" class="font-bold hover:opacity-70 underline">email me</a> or <a href="https://tidycal.com/jamesinman/20-minute-introduction-call" class="font-bold hover:opacity-70 underline">book in an intro call</a> to talk through your requirements.
+    1:1 in person sessions (in Essex, and East or Central London) are available depending on availability, but may be charged at a higher rate for travel expenses. My seminars are available in person only (priced on request), but I can deliver these nationwide depending on arrangements. Please <a href="mailto:james@wilderotter.co.uk" class="font-bold hover:opacity-70 underline">email me</a> or <a href="https://tidycal.com/jamesinman/20-minute-introduction-call" class="font-bold hover:opacity-70 underline">book in an intro call</a> to talk through your requirements.
   </p>
 </section>
 
@@ -157,7 +157,7 @@ title: Mentoring & Coaching
     <div>
       <h3 class="text-lg font-semibold font-body mb-2">How do I pay for sessions?</h3>
       <p class="text-lg text-secondaryText font-body leading-relaxed">Payment is through the buttons above using a credit or debit card before your session(s) take place. You can also set up a direct debit if that's easier for you. I accept <strong>Access to Work</strong> funding, and am happy to invoice employers.</p>
-      <p class="text-lg text-secondaryText font-body leading-relaxed mt-2">If you're genuinely struggling with the price of sessions (for example, you're unemployed and not in receipt of benefits) but would like to access my services, I can offer some discretionary discounts: <a href="mailto:james@jamesinman.co.uk" class="font-bold hover:opacity-70 underline">email me</a> for more information.</p>
+      <p class="text-lg text-secondaryText font-body leading-relaxed mt-2">If you're genuinely struggling with the price of sessions (for example, you're unemployed and not in receipt of benefits) but would like to access my services, I can offer some discretionary discounts: <a href="mailto:james@wilderotter.co.uk" class="font-bold hover:opacity-70 underline">email me</a> for more information.</p>
     </div>
     <div>
       <h3 class="text-lg font-semibold font-body mb-2">Do I have to keep my camera on?</h3>
@@ -181,7 +181,7 @@ title: Mentoring & Coaching
     </div>
     <div>
       <h3 class="text-lg font-semibold font-body mb-2">I've got more questions</h3>
-      <p class="text-lg text-secondaryText font-body leading-relaxed">That's completely understandable - embarking on a new mentoring/coaching programme, especially for the first time, can be scary! Feel free to <a href="mailto:james@jamesinman.co.uk" class="font-bold hover:opacity-70 underline">email me</a> or <a href="https://tidycal.com/jamesinman/20-minute-introduction-call" class="font-bold hover:opacity-70 underline">book in a free 20-minute intro call</a> to discuss further.</p>
+      <p class="text-lg text-secondaryText font-body leading-relaxed">That's completely understandable - embarking on a new mentoring/coaching programme, especially for the first time, can be scary! Feel free to <a href="mailto:james@wilderotter.co.uk" class="font-bold hover:opacity-70 underline">email me</a> or <a href="https://tidycal.com/jamesinman/20-minute-introduction-call" class="font-bold hover:opacity-70 underline">book in a free 20-minute intro call</a> to discuss further.</p>
     </div>
   </div>
 </section>

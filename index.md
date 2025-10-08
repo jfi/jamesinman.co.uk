@@ -26,7 +26,7 @@ id: home
           class="inline-block bg-[#010A49] hover:opacity-90 text-white font-medium py-3 px-6 font-body text-base transition">
           Book a call →
         </a>
-        <a href="mailto:james@jamesinman.co.uk"
+        <a href="mailto:james@wilderotter.co.uk"
           class="inline-block text-primaryText hover:opacity-70 py-3 px-6 font-body text-base transition">
           Email me →
         </a>
