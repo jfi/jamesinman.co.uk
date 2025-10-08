@@ -25,11 +25,13 @@ id: home
       </p>
       <div class="flex gap-4">
         <a href="https://tidycal.com/jamesinman/20-minute-introduction-call" target="_blank" rel="noopener"
-          class="inline-block bg-[#010A49] hover:opacity-90 text-white font-medium py-3 px-6 font-body text-base transition-all hover:shadow-lg focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-primaryText">
+          class="inline-block bg-[#010A49] hover:opacity-90 text-white font-medium py-3 px-6 font-body text-base transition-all hover:shadow-lg focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-primaryText"
+          data-plausible-event="Book Intro Call (Home)">
           Book a call →
         </a>
         <a href="mailto:james@wilderotter.co.uk"
-          class="inline-block text-primaryText hover:opacity-70 py-3 px-6 font-body text-base transition-opacity focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-primaryText">
+          class="inline-block text-primaryText hover:opacity-70 py-3 px-6 font-body text-base transition-opacity focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-primaryText"
+          data-plausible-event="Email Click (Home)">
           Email me →
         </a>
       </div>
@@ -64,7 +66,7 @@ id: home
     <p class="text-lg text-secondaryText font-body mb-6 leading-relaxed">
       Whether you're navigating technology leadership, understanding your autism or ADHD, or working out your next career steps, I can help you find perspective and make a plan for what's next.
     </p>
-    <a href="{{ site.baseurl }}/neurodiversity-coaching-and-technology-mentoring" class="inline-block bg-white border border-primaryText hover:bg-gray-50 text-primaryText font-medium py-3 px-6 font-body text-base transition-all hover:shadow-md focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-primaryText">Learn more →</a>
+    <a href="{{ site.baseurl }}/neurodiversity-coaching-and-technology-mentoring" class="inline-block bg-white border border-primaryText hover:bg-gray-50 text-primaryText font-medium py-3 px-6 font-body text-base transition-all hover:shadow-md focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-primaryText" data-plausible-event="Mentoring Learn More">Learn more →</a>
   </div>
   <div>
     <img src="https://images.unsplash.com/uploads/14122810486321888a497/1b0cc699?w=800&h=600&fit=crop" alt="Two people having a mentoring conversation" class="w-full h-[400px] object-cover rounded" />

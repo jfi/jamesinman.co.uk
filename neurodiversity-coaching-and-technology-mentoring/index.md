@@ -24,11 +24,13 @@ title: Mentoring & Coaching
       </p>
       <div class="flex gap-4">
         <a href="https://tidycal.com/jamesinman/20-minute-introduction-call" target="_blank" rel="noopener"
-          class="inline-block bg-[#010A49] hover:opacity-90 text-white font-medium py-3 px-6 font-body text-base transition-all hover:shadow-lg focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-primaryText">
+          class="inline-block bg-[#010A49] hover:opacity-90 text-white font-medium py-3 px-6 font-body text-base transition-all hover:shadow-lg focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-primaryText"
+          data-plausible-event="Book Intro Call (MC)">
           Book a call →
         </a>
         <a href="mailto:james@wilderotter.co.uk"
-          class="inline-block text-primaryText hover:opacity-70 py-3 px-6 font-body text-base transition-opacity focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-primaryText">
+          class="inline-block text-primaryText hover:opacity-70 py-3 px-6 font-body text-base transition-opacity focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-primaryText"
+          data-plausible-event="Email Click (MC)">
           Email me →
         </a>
       </div>
@@ -131,13 +133,13 @@ title: Mentoring & Coaching
     I offer a discounted price for booking a block of 6 sessions at once, but can also setup payment plans so you can spread the cost of sessions.
   </p>
   <div class="flex flex-col sm:flex-row gap-4 mb-4">
-    <a href="https://tidycal.com/jamesinman/single-mentoring-coaching-session" target="_blank" rel="noopener" class="inline-block bg-[#010A49] hover:opacity-90 text-white font-medium py-3 px-6 font-body text-base transition-all hover:shadow-lg focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-primaryText">
+    <a href="https://tidycal.com/jamesinman/single-mentoring-coaching-session" target="_blank" rel="noopener" class="inline-block bg-[#010A49] hover:opacity-90 text-white font-medium py-3 px-6 font-body text-base transition-all hover:shadow-lg focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-primaryText" data-plausible-event="Book Single Session">
       Book 1 Session: £125 →
     </a>
-    <a href="https://tidycal.com/jamesinman/6-mentoring-coaching-session-offer" target="_blank" rel="noopener" class="inline-block bg-[#010A49] hover:opacity-90 text-white font-medium py-3 px-6 font-body text-base transition-all hover:shadow-lg focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-primaryText">
+    <a href="https://tidycal.com/jamesinman/6-mentoring-coaching-session-offer" target="_blank" rel="noopener" class="inline-block bg-[#010A49] hover:opacity-90 text-white font-medium py-3 px-6 font-body text-base transition-all hover:shadow-lg focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-primaryText" data-plausible-event="Book 6 Sessions">
       Book 6 Sessions: £550 →
     </a>
-    <a href="https://tidycal.com/jamesinman/20-minute-introduction-call" target="_blank" rel="noopener" class="inline-block bg-white border border-primaryText hover:bg-gray-50 text-primaryText font-medium py-3 px-6 font-body text-base transition-all hover:shadow-md focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-primaryText">
+    <a href="https://tidycal.com/jamesinman/20-minute-introduction-call" target="_blank" rel="noopener" class="inline-block bg-white border border-primaryText hover:bg-gray-50 text-primaryText font-medium py-3 px-6 font-body text-base transition-all hover:shadow-md focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-primaryText" data-plausible-event="Book Intro Call (Pricing)">
       Book a free 20-minute intro call →
     </a>
   </div>

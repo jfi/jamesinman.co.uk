@@ -23,6 +23,7 @@
     </script>
     <script>
       document.addEventListener('DOMContentLoaded', function() {
+        // Smooth scrolling for anchor links
         document.querySelectorAll('a[href^="#"]').forEach(anchor => {
           anchor.addEventListener('click', function (e) {
             const href = this.getAttribute('href');
@@ -35,6 +36,16 @@
                 behavior: 'smooth',
                 block: 'start'
               });
+            }
+          });
+        });
+
+        // Plausible event tracking for buttons and links
+        document.querySelectorAll('a[data-plausible-event]').forEach(element => {
+          element.addEventListener('click', function() {
+            const eventName = this.getAttribute('data-plausible-event');
+            if (window.plausible && eventName) {
+              plausible(eventName);
             }
           });
         });
