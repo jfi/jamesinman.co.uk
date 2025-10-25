@@ -4,6 +4,14 @@ baseurl: ''
 url: 'https://jamesinman.co.uk'
 markdown: kramdown
 
+exclude:
+  - README.md
+  - node_modules
+  - package.json
+  - package-lock.json
+  - Procfile
+  - .husky
+
 navigation:
   - title: About
     url: /
