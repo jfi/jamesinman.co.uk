@@ -4,9 +4,9 @@
 
 ### 1️⃣ Prerequisites
 Make sure you have the following installed:
-- **Ruby** (2.7 or later)
+- **Ruby** (3.4.5 or later)
 - **Bundler** (`gem install bundler`)
-- **Node.js** (16+)
+- **Node.js** (18+)
 - **npm**
 
 ### 2️⃣ Install dependencies
@@ -15,13 +15,25 @@ Make sure you have the following installed:
     bundle install
     npm install
 
-### 3️⃣ Run Jekyll locally, and Tailwind in watch mode
+### 3️⃣ Development Options
 
-    foreman start
+**Option A: Full development environment (recommended)**
+```bash
+foreman start
+```
+
+**Option B: Individual processes**
+```bash
+# Terminal 1: Jekyll with CSS building
+npm run serve
+
+# Terminal 2: Watch Tailwind CSS changes
+npm run dev
+```
 
 Visit the site at: **http://localhost:4000**
 
-This will watch for changes in `assets/css/input.css` and output to `assets/css/main.css`.
+**Note:** The pre-commit hook will automatically build CSS before commits.
 
 ---
 
@@ -41,18 +53,31 @@ This will watch for changes in `assets/css/input.css` and output to `assets/css/
 
 ## 🌐 Deploying to GitHub Pages
 
-1. Push this repository to GitHub.
-2. Go to **Settings → Pages**.
-3. Set the source branch to `main` (and `/root` folder).
-4. Wait for GitHub Pages to build – your site will be live.
+The site automatically deploys via GitHub Actions when you push to `main`:
+
+1. Push changes to the `main` branch.
+2. GitHub Actions builds both Tailwind CSS and Jekyll.
+3. Site is deployed to GitHub Pages automatically.
+
+The workflow handles both Node.js (Tailwind) and Ruby (Jekyll) dependencies.
 
 ---
 
 ## ⚙️ Commands Summary
 
-- `bundle exec jekyll serve` → Runs the Jekyll site locally.
-- `npm run dev` → Watches and compiles Tailwind CSS.
+### Development
 - `foreman start` → Runs Jekyll and Tailwind (in watch mode) together.
+- `npm run serve` → Builds CSS once and starts Jekyll server.
+- `npm run dev` → Watches and compiles Tailwind CSS.
+
+### Building
+- `npm run build` → Builds Tailwind CSS once.
+- `npm run build:jekyll` → Builds Jekyll site.
+- `npm run build:all` → Builds both CSS and Jekyll site.
+
+### Git Integration
+- Pre-commit hook automatically builds CSS and stages it.
+- GitHub Actions automatically builds everything on push to main.
 
 ---
 
