@@ -7,7 +7,8 @@
     "build:jekyll": "bundle exec jekyll build",
     "build:all": "npm run build && npm run build:jekyll",
     "serve": "npm run build && bundle exec jekyll serve",
-    "precommit": "npm run build && git add assets/css/main.css"
+    "precommit": "npm run build && git add assets/css/main.css",
+    "postinstall": "husky install"
   },
   "devDependencies": {
     "tailwindcss": "^3.4.0",
