@@ -15,15 +15,15 @@
     <link rel="apple-touch-icon" sizes="180x180" href="/assets/favicon/apple-touch-icon.png" />
     <meta name="apple-mobile-web-app-title" content="James I" />
     <link rel="manifest" href="/assets/favicon/site.webmanifest" />
-    <script defer src="https://app-static.sitesights.io/client.min.js?v=1" data-website-uid="hJrDpGmg_kWorS67JCjHZw"></script>
-    <script defer type="module">
-      MDAL.pageView({
-        Absolute: null,
-        ClientId: null,
-      })
+    <!-- Privacy-friendly analytics -->
+    <script async src="/assets/js/analytics.js"></script>
+    <script>
+      window.plausible=window.plausible||function(){(plausible.q=plausible.q||[]).push(arguments)},plausible.init=plausible.init||function(i){plausible.o=i||{}};
+      plausible.init()
     </script>
     <script>
       document.addEventListener('DOMContentLoaded', function() {
+        // Smooth scrolling for anchor links
         document.querySelectorAll('a[href^="#"]').forEach(anchor => {
           anchor.addEventListener('click', function (e) {
             const href = this.getAttribute('href');
@@ -36,6 +36,16 @@
                 behavior: 'smooth',
                 block: 'start'
               });
+            }
+          });
+        });
+
+        // Plausible event tracking for buttons and links
+        document.querySelectorAll('a[data-plausible-event]').forEach(element => {
+          element.addEventListener('click', function() {
+            const eventName = this.getAttribute('data-plausible-event');
+            if (window.plausible && eventName) {
+              plausible(eventName);
             }
           });
         });
@@ -94,10 +104,10 @@
         I work at the intersection of <strong>technology, mental health,</strong> and <strong>psychology</strong> — helping organisations and individuals make a difference through their work and in their lives.
       </p>
       <div class="flex gap-4">
-        <a href="https://tidycal.com/jamesinman/20-minute-introduction-call" target="_blank" rel="noopener" class="inline-block bg-[#010A49] hover:opacity-90 text-white font-medium py-3 px-6 font-body text-base transition-all hover:shadow-lg focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-primaryText">
+        <a href="https://tidycal.com/jamesinman/20-minute-introduction-call" target="_blank" rel="noopener" class="inline-block bg-[#010A49] hover:opacity-90 text-white font-medium py-3 px-6 font-body text-base transition-all hover:shadow-lg focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-primaryText" data-plausible-event="Book Intro Call (Home)">
           Book a call →
         </a>
-        <a href="mailto:james@wilderotter.co.uk" class="inline-block text-primaryText hover:opacity-70 py-3 px-6 font-body text-base transition-opacity focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-primaryText">
+        <a href="mailto:james@wilderotter.co.uk" class="inline-block text-primaryText hover:opacity-70 py-3 px-6 font-body text-base transition-opacity focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-primaryText" data-plausible-event="Email Click (Home)">
           Email me →
         </a>
       </div>
@@ -132,7 +142,7 @@
     <p class="text-lg text-secondaryText font-body mb-6 leading-relaxed">
       Whether you're navigating technology leadership, understanding your autism or ADHD, or working out your next career steps, I can help you find perspective and make a plan for what's next.
     </p>
-    <a href="/neurodiversity-coaching-and-technology-mentoring" class="inline-block bg-white border border-primaryText hover:bg-gray-50 text-primaryText font-medium py-3 px-6 font-body text-base transition-all hover:shadow-md focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-primaryText">Learn more →</a>
+    <a href="/neurodiversity-coaching-and-technology-mentoring" class="inline-block bg-white border border-primaryText hover:bg-gray-50 text-primaryText font-medium py-3 px-6 font-body text-base transition-all hover:shadow-md focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-primaryText" data-plausible-event="Mentoring Learn More">Learn more →</a>
   </div>
   <div>
     <img src="https://images.unsplash.com/uploads/14122810486321888a497/1b0cc699?w=800&amp;h=600&amp;fit=crop" alt="Two people having a mentoring conversation" class="w-full h-[400px] object-cover rounded" />
@@ -197,8 +207,10 @@
       <li class="pl-2">Member of the British Computer Society (MBCS)</li>
       <li class="pl-2">Member of the Royal Society of Public Health (MRSPH)</li>
       <li class="pl-2">Student Member of the British Psychological Society (BPS)</li>
+      <li class="pl-2">Student Member of the British Association for Counselling and Psychotherapy (BACP)</li>
     </ul>
     <ul class="text-secondaryText text-base space-y-2 list-disc pl-5">
+      <li class="pl-2">MA in Couple and Individual Psychodynamic Psychotherapy <strong>(in progress)</strong></li>
       <li class="pl-2">MSc Psychology <span class="text-sm">(awaiting award)</span></li>
       <li class="pl-2">LLB (Hons) undergraduate degree in Law</li>
       <li class="pl-2">Level 2 Certificate in Introduction to Counselling</li>
@@ -217,10 +229,10 @@
     </p>
   </div>
   <div class="flex flex-col items-end justify-center gap-2">
-    <a href="https://tidycal.com/jamesinman/20-minute-introduction-call" target="_blank" rel="noopener" class="inline-block bg-[#010A49] hover:opacity-90 text-white font-medium py-3 px-6 font-body text-base transition-all hover:shadow-lg focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-primaryText">
+    <a href="https://tidycal.com/jamesinman/20-minute-introduction-call" target="_blank" rel="noopener" class="inline-block bg-[#010A49] hover:opacity-90 text-white font-medium py-3 px-6 font-body text-base transition-all hover:shadow-lg focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-primaryText" data-plausible-event="Book Intro Call (Footer)">
       Book a 20 minute intro call →
     </a>
-    <a href="mailto:james@wilderotter.co.uk" class="inline-block text-primaryText hover:opacity-70 py-3 px-6 font-body text-base transition-opacity focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-primaryText">
+    <a href="mailto:james@wilderotter.co.uk" class="inline-block text-primaryText hover:opacity-70 py-3 px-6 font-body text-base transition-opacity focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-primaryText" data-plausible-event="Email Click (Footer)">
       Email me →
     </a>
   </div>

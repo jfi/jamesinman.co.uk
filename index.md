@@ -131,8 +131,10 @@ id: home
       <li class="pl-2">Member of the British Computer Society (MBCS)</li>
       <li class="pl-2">Member of the Royal Society of Public Health (MRSPH)</li>
       <li class="pl-2">Student Member of the British Psychological Society (BPS)</li>
+      <li class="pl-2">Student Member of the British Association for Counselling and Psychotherapy (BACP)</li>
     </ul>
     <ul class="text-secondaryText text-base space-y-2 list-disc pl-5">
+      <li class="pl-2">MA in Couple and Individual Psychodynamic Psychotherapy <strong>(in progress)</strong></li>
       <li class="pl-2">MSc Psychology <span class="text-sm">(awaiting award)</span></li>
       <li class="pl-2">LLB (Hons) undergraduate degree in Law</li>
       <li class="pl-2">Level 2 Certificate in Introduction to Counselling</li>

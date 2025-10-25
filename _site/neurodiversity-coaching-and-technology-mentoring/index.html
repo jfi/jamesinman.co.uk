@@ -15,15 +15,15 @@
     <link rel="apple-touch-icon" sizes="180x180" href="/assets/favicon/apple-touch-icon.png" />
     <meta name="apple-mobile-web-app-title" content="James I" />
     <link rel="manifest" href="/assets/favicon/site.webmanifest" />
-    <script defer src="https://app-static.sitesights.io/client.min.js?v=1" data-website-uid="hJrDpGmg_kWorS67JCjHZw"></script>
-    <script defer type="module">
-      MDAL.pageView({
-        Absolute: null,
-        ClientId: null,
-      })
+    <!-- Privacy-friendly analytics -->
+    <script async src="/assets/js/analytics.js"></script>
+    <script>
+      window.plausible=window.plausible||function(){(plausible.q=plausible.q||[]).push(arguments)},plausible.init=plausible.init||function(i){plausible.o=i||{}};
+      plausible.init()
     </script>
     <script>
       document.addEventListener('DOMContentLoaded', function() {
+        // Smooth scrolling for anchor links
         document.querySelectorAll('a[href^="#"]').forEach(anchor => {
           anchor.addEventListener('click', function (e) {
             const href = this.getAttribute('href');
@@ -36,6 +36,16 @@
                 behavior: 'smooth',
                 block: 'start'
               });
+            }
+          });
+        });
+
+        // Plausible event tracking for buttons and links
+        document.querySelectorAll('a[data-plausible-event]').forEach(element => {
+          element.addEventListener('click', function() {
+            const eventName = this.getAttribute('data-plausible-event');
+            if (window.plausible && eventName) {
+              plausible(eventName);
             }
           });
         });
@@ -94,10 +104,10 @@
         Get support from someone who understands — both <strong>professionally</strong> and <strong>personally</strong>. I can help you navigate challenges or complex transitions, and gain insight into your strengths.
       </p>
       <div class="flex gap-4">
-        <a href="https://tidycal.com/jamesinman/20-minute-introduction-call" target="_blank" rel="noopener" class="inline-block bg-[#010A49] hover:opacity-90 text-white font-medium py-3 px-6 font-body text-base transition-all hover:shadow-lg focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-primaryText">
+        <a href="https://tidycal.com/jamesinman/20-minute-introduction-call" target="_blank" rel="noopener" class="inline-block bg-[#010A49] hover:opacity-90 text-white font-medium py-3 px-6 font-body text-base transition-all hover:shadow-lg focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-primaryText" data-plausible-event="Book Intro Call (MC)">
           Book a call →
         </a>
-        <a href="mailto:james@wilderotter.co.uk" class="inline-block text-primaryText hover:opacity-70 py-3 px-6 font-body text-base transition-opacity focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-primaryText">
+        <a href="mailto:james@wilderotter.co.uk" class="inline-block text-primaryText hover:opacity-70 py-3 px-6 font-body text-base transition-opacity focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-primaryText" data-plausible-event="Email Click (MC)">
           Email me →
         </a>
       </div>
@@ -200,13 +210,13 @@
     I offer a discounted price for booking a block of 6 sessions at once, but can also setup payment plans so you can spread the cost of sessions.
   </p>
   <div class="flex flex-col sm:flex-row gap-4 mb-4">
-    <a href="https://tidycal.com/jamesinman/single-mentoring-coaching-session" target="_blank" rel="noopener" class="inline-block bg-[#010A49] hover:opacity-90 text-white font-medium py-3 px-6 font-body text-base transition-all hover:shadow-lg focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-primaryText">
+    <a href="https://tidycal.com/jamesinman/single-mentoring-coaching-session" target="_blank" rel="noopener" class="inline-block bg-[#010A49] hover:opacity-90 text-white font-medium py-3 px-6 font-body text-base transition-all hover:shadow-lg focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-primaryText" data-plausible-event="Book Single Session">
       Book 1 Session: £125 →
     </a>
-    <a href="https://tidycal.com/jamesinman/6-mentoring-coaching-session-offer" target="_blank" rel="noopener" class="inline-block bg-[#010A49] hover:opacity-90 text-white font-medium py-3 px-6 font-body text-base transition-all hover:shadow-lg focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-primaryText">
+    <a href="https://tidycal.com/jamesinman/6-mentoring-coaching-session-offer" target="_blank" rel="noopener" class="inline-block bg-[#010A49] hover:opacity-90 text-white font-medium py-3 px-6 font-body text-base transition-all hover:shadow-lg focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-primaryText" data-plausible-event="Book 6 Sessions">
       Book 6 Sessions: £550 →
     </a>
-    <a href="https://tidycal.com/jamesinman/20-minute-introduction-call" target="_blank" rel="noopener" class="inline-block bg-white border border-primaryText hover:bg-gray-50 text-primaryText font-medium py-3 px-6 font-body text-base transition-all hover:shadow-md focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-primaryText">
+    <a href="https://tidycal.com/jamesinman/20-minute-introduction-call" target="_blank" rel="noopener" class="inline-block bg-white border border-primaryText hover:bg-gray-50 text-primaryText font-medium py-3 px-6 font-body text-base transition-all hover:shadow-md focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-primaryText" data-plausible-event="Book Intro Call (Pricing)">
       Book a free 20-minute intro call →
     </a>
   </div>
@@ -267,10 +277,10 @@
     </p>
   </div>
   <div class="flex flex-col items-end justify-center gap-2">
-    <a href="https://tidycal.com/jamesinman/20-minute-introduction-call" target="_blank" rel="noopener" class="inline-block bg-[#010A49] hover:opacity-90 text-white font-medium py-3 px-6 font-body text-base transition-all hover:shadow-lg focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-primaryText">
+    <a href="https://tidycal.com/jamesinman/20-minute-introduction-call" target="_blank" rel="noopener" class="inline-block bg-[#010A49] hover:opacity-90 text-white font-medium py-3 px-6 font-body text-base transition-all hover:shadow-lg focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-primaryText" data-plausible-event="Book Intro Call (Footer)">
       Book a 20 minute intro call →
     </a>
-    <a href="mailto:james@wilderotter.co.uk" class="inline-block text-primaryText hover:opacity-70 py-3 px-6 font-body text-base transition-opacity focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-primaryText">
+    <a href="mailto:james@wilderotter.co.uk" class="inline-block text-primaryText hover:opacity-70 py-3 px-6 font-body text-base transition-opacity focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-primaryText" data-plausible-event="Email Click (Footer)">
       Email me →
     </a>
   </div>

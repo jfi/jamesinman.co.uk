@@ -15,15 +15,15 @@
     <link rel="apple-touch-icon" sizes="180x180" href="/assets/favicon/apple-touch-icon.png" />
     <meta name="apple-mobile-web-app-title" content="James I" />
     <link rel="manifest" href="/assets/favicon/site.webmanifest" />
-    <script defer src="https://app-static.sitesights.io/client.min.js?v=1" data-website-uid="hJrDpGmg_kWorS67JCjHZw"></script>
-    <script defer type="module">
-      MDAL.pageView({
-        Absolute: null,
-        ClientId: null,
-      })
+    <!-- Privacy-friendly analytics -->
+    <script async src="/assets/js/analytics.js"></script>
+    <script>
+      window.plausible=window.plausible||function(){(plausible.q=plausible.q||[]).push(arguments)},plausible.init=plausible.init||function(i){plausible.o=i||{}};
+      plausible.init()
     </script>
     <script>
       document.addEventListener('DOMContentLoaded', function() {
+        // Smooth scrolling for anchor links
         document.querySelectorAll('a[href^="#"]').forEach(anchor => {
           anchor.addEventListener('click', function (e) {
             const href = this.getAttribute('href');
@@ -36,6 +36,16 @@
                 behavior: 'smooth',
                 block: 'start'
               });
+            }
+          });
+        });
+
+        // Plausible event tracking for buttons and links
+        document.querySelectorAll('a[data-plausible-event]').forEach(element => {
+          element.addEventListener('click', function() {
+            const eventName = this.getAttribute('data-plausible-event');
+            if (window.plausible && eventName) {
+              plausible(eventName);
             }
           });
         });
