@@ -49,6 +49,32 @@
             }
           });
         });
+
+        // Project description toggle
+        document.querySelectorAll('.project-description-container').forEach(container => {
+          const description = container.querySelector('.project-description');
+          const toggle = container.querySelector('.project-toggle');
+          const toggleText = toggle.querySelector('.toggle-text');
+          
+          // Check if text is clamped
+          if (description.scrollHeight > description.clientHeight) {
+            toggle.classList.remove('hidden');
+          }
+
+          toggle.addEventListener('click', function() {
+            const isExpanded = description.classList.contains('line-clamp-2');
+            
+            if (isExpanded) {
+              description.classList.remove('line-clamp-2');
+              description.style.maxHeight = description.scrollHeight + 'px';
+              toggleText.textContent = 'Read less';
+            } else {
+              description.style.maxHeight = null;
+              description.classList.add('line-clamp-2');
+              toggleText.textContent = 'Read more...';
+            }
+          });
+        });
       });
     </script>
   </head>

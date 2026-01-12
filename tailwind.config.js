@@ -1,6 +1,14 @@
 /** @type {import('tailwindcss').Config} */
 module.exports = {
-  content: ['./_layouts/**/*.html', './_includes/**/*.html', './neurodiversity-coaching-and-technology-mentoring/**/*.md', './index.md'],
+  content: [
+    './_layouts/**/*.html',
+    './_includes/**/*.html',
+    './neurodiversity-coaching-and-technology-mentoring/**/*.md',
+    './projects-and-thoughts/**/*.md',
+    './tech-and-thoughts/**/*.md',
+    './_posts/**/*.md',
+    './index.md'
+  ],
   theme: {
     extend: {
       colors: {
@@ -22,5 +30,7 @@ module.exports = {
       },
     },
   },
-  plugins: [],
+  plugins: [
+    require('@tailwindcss/line-clamp'),
+  ],
 }

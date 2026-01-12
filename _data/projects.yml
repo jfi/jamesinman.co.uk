@@ -1,0 +1,11 @@
+# Recent Projects - displayed in descending order by date
+# Tag icons come from Simple Icons (https://simpleicons.org)
+# Common tags: ruby, rails, open source, python, openai, javascript, postgresql
+
+- title: 'Added octodns formula to Homebrew'
+  link: 'https://github.com/Homebrew/homebrew-core'
+  date: 2024-12-01
+  description: 'Contributed the octodns formula to Homebrew, making it easier for users to install and manage DNS records as code using the octoDNS toolkit.'
+  tags:
+    - ruby:ruby
+    - open-source:opensourceinitiative

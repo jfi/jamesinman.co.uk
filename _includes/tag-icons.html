@@ -1,0 +1,32 @@
+{% comment %}
+  Usage: {% include tag-icons.html tags=post.tags %}
+  Renders technology tags with Simple Icons logos from CDN
+  See https://simpleicons.org for available icons
+{% endcomment %}
+<div class="flex flex-wrap gap-2 mt-3">
+  {% for tag in include.tags %}
+  {% assign tag_parts = tag | split: ':' %}
+  {% assign tag_name = tag_parts | first %}
+  {% assign tag_icon = tag_parts | last %}
+  {% if tag_icon == tag_name %}
+    {% if tag_name == 'opensource' %}
+      {% assign tag_icon = 'opensourceinitiative' %}
+      {% assign display_name = 'Open Source' %}
+    {% else %}
+      {% assign display_name = tag_name | replace: '-', ' ' | capitalize %}
+    {% endif %}
+  {% else %}
+    {% assign display_name = tag_name | replace: '-', ' ' | capitalize %}
+  {% endif %}
+  <span class="inline-flex items-center gap-1.5 px-2.5 py-1 bg-white border border-cardBorder text-sm text-secondaryText rounded">
+    <img
+      src="https://cdn.simpleicons.org/{{ tag_icon | replace: ' ', '-' }}/1f2937"
+      alt=""
+      class="w-4 h-4"
+      onerror="this.style.display='none'"
+      aria-hidden="true"
+    />
+    <span>{{ display_name }}</span>
+  </span>
+  {% endfor %}
+</div>
