@@ -16,9 +16,13 @@ navigation:
   - title: About
     url: /
     page_id: home
-  - title: Mentoring & Coaching
+  - title: Coaching
     url: /neurodiversity-coaching-and-technology-mentoring
-    page_title: Mentoring & Coaching
+    page_title: Coaching
+  - title: Latest
+    url: /latest
+    page_title: Latest
   - title: LinkedIn
     url: https://www.linkedin.com/in/jamesfinman/
     page_title: LinkedIn
+    icon: linkedin

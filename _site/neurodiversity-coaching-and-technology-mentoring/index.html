@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Mentoring & Coaching &middot; James Inman</title>
+    <title>Coaching &middot; James Inman</title>
     <link href="/assets/css/main.css" rel="stylesheet" />
     <link
       href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500&family=Playfair+Display:wght@400;700&family=DM+Sans:wght@400&display=swap"
@@ -49,6 +49,32 @@
             }
           });
         });
+
+        // Project description toggle
+        document.querySelectorAll('.project-description-container').forEach(container => {
+          const description = container.querySelector('.project-description');
+          const toggle = container.querySelector('.project-toggle');
+          const toggleText = toggle.querySelector('.toggle-text');
+          
+          // Check if text is clamped
+          if (description.scrollHeight > description.clientHeight) {
+            toggle.classList.remove('hidden');
+          }
+
+          toggle.addEventListener('click', function() {
+            const isExpanded = description.classList.contains('line-clamp-2');
+            
+            if (isExpanded) {
+              description.classList.remove('line-clamp-2');
+              description.style.maxHeight = description.scrollHeight + 'px';
+              toggleText.textContent = 'Read less';
+            } else {
+              description.style.maxHeight = null;
+              description.classList.add('line-clamp-2');
+              toggleText.textContent = 'Read more...';
+            }
+          });
+        });
       });
     </script>
   </head>
@@ -62,23 +88,37 @@
 <div class="grid md:grid-cols-2 gap-12 mb-20 items-center">
   <div class="text-3xl font-display"><a href="/" aria-label="James Inman home" class="focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-primaryText transition-opacity hover:opacity-70">JI.</a></div>
   <nav aria-label="Main navigation">
-    <ul class="flex gap-8 text-[21px] font-medium leading-[120%] tracking-[-0.03em]">
+    <ul class="flex items-center gap-8 text-[21px] font-medium leading-[120%] tracking-[-0.03em]">
       
       <li>
-        <a href="/" class="focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-primaryText">
+        <a href="/" class="focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-primaryText ">
+          
           <span class="hover:border-b-2 hover:border-primaryText pb-1 pr-0.5 transition-all ">About</span><span class="ml-0.25">.</span>
+          
         </a>
       </li>
       
       <li>
-        <a href="/neurodiversity-coaching-and-technology-mentoring" aria-current="page" class="focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-primaryText">
-          <span class="hover:border-b-2 hover:border-primaryText pb-1 pr-0.5 transition-all border-b-2 border-primaryText">Mentoring &amp; Coaching</span><span class="ml-0.25">.</span>
+        <a href="/neurodiversity-coaching-and-technology-mentoring" aria-current="page" class="focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-primaryText ">
+          
+          <span class="hover:border-b-2 hover:border-primaryText pb-1 pr-0.5 transition-all border-b-2 border-primaryText">Coaching</span><span class="ml-0.25">.</span>
+          
         </a>
       </li>
       
       <li>
-        <a href="https://www.linkedin.com/in/jamesfinman/" target="_blank" rel="noopener noreferrer" class="focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-primaryText">
-          <span class="hover:border-b-2 hover:border-primaryText pb-1 pr-0.5 transition-all ">LinkedIn</span><span class="ml-0.25">.</span>
+        <a href="/latest" class="focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-primaryText ">
+          
+          <span class="hover:border-b-2 hover:border-primaryText pb-1 pr-0.5 transition-all ">Latest</span><span class="ml-0.25">.</span>
+          
+        </a>
+      </li>
+      
+      <li>
+        <a href="https://www.linkedin.com/in/jamesfinman/" target="_blank" rel="noopener noreferrer" class="focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-primaryText hover:opacity-70 transition-opacity">
+          
+          <svg class="inline-block w-6 h-6" width="24" height="24" fill="#1f2937" viewBox="0 0 24 24" role="img" aria-label="LinkedIn"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z" /></svg>
+          
         </a>
       </li>
       
@@ -288,7 +328,7 @@
 
 </main>
     <footer class="text-center text-sm pb-8 px-4 md:px-0">
-  © 2025 James Inman
+  © 2026 James Inman
   <div class="text-3xl font-display mt-4 mb-4"><a href="#top" class="hover:opacity-70 transition-opacity">JI.</a></div>
   Technology consultancy services are offered through Otaina Limited (company number 15019458).<br class="hidden md:block" /><span
     class="md:hidden"
@@ -300,6 +340,8 @@
     &middot; </span
   >Both registered in England at Ground Floor, Kings House, 101-135 Kings Road, Brentwood, Essex, United Kingdom, CM14 4DR.
 </footer>
+<script data-collect-dnt="true" async src="https://scripts.simpleanalyticscdn.com/latest.js"></script>
+<noscript><img src="https://queue.simpleanalyticscdn.com/noscript.gif?collect-dnt=true" alt="" referrerpolicy="no-referrer-when-downgrade"/></noscript>
 
   </body>
 </html>

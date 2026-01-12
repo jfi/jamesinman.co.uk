@@ -49,6 +49,32 @@
             }
           });
         });
+
+        // Project description toggle
+        document.querySelectorAll('.project-description-container').forEach(container => {
+          const description = container.querySelector('.project-description');
+          const toggle = container.querySelector('.project-toggle');
+          const toggleText = toggle.querySelector('.toggle-text');
+          
+          // Check if text is clamped
+          if (description.scrollHeight > description.clientHeight) {
+            toggle.classList.remove('hidden');
+          }
+
+          toggle.addEventListener('click', function() {
+            const isExpanded = description.classList.contains('line-clamp-2');
+            
+            if (isExpanded) {
+              description.classList.remove('line-clamp-2');
+              description.style.maxHeight = description.scrollHeight + 'px';
+              toggleText.textContent = 'Read less';
+            } else {
+              description.style.maxHeight = null;
+              description.classList.add('line-clamp-2');
+              toggleText.textContent = 'Read more...';
+            }
+          });
+        });
       });
     </script>
   </head>
@@ -63,7 +89,7 @@
 <p>Technology and strategy for charities, non-profits, and purpose-driven businesses.</p>
 </main>
     <footer class="text-center text-sm pb-8 px-4 md:px-0">
-  © 2025 James Inman
+  © 2026 James Inman
   <div class="text-3xl font-display mt-4 mb-4"><a href="#top" class="hover:opacity-70 transition-opacity">JI.</a></div>
   Technology consultancy services are offered through Otaina Limited (company number 15019458).<br class="hidden md:block" /><span
     class="md:hidden"
@@ -75,6 +101,8 @@
     &middot; </span
   >Both registered in England at Ground Floor, Kings House, 101-135 Kings Road, Brentwood, Essex, United Kingdom, CM14 4DR.
 </footer>
+<script data-collect-dnt="true" async src="https://scripts.simpleanalyticscdn.com/latest.js"></script>
+<noscript><img src="https://queue.simpleanalyticscdn.com/noscript.gif?collect-dnt=true" alt="" referrerpolicy="no-referrer-when-downgrade"/></noscript>
 
   </body>
 </html>

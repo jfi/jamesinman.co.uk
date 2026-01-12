@@ -1,0 +1,257 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Latest &middot; James Inman</title>
+    <link href="/assets/css/main.css" rel="stylesheet" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500&family=Playfair+Display:wght@400;700&family=DM+Sans:wght@400&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="icon" type="image/png" href="/assets/favicon/favicon-96x96.png" sizes="96x96" />
+    <link rel="icon" type="image/svg+xml" href="/assets/favicon/favicon.svg" />
+    <link rel="shortcut icon" href="/assets/favicon/favicon.ico" />
+    <link rel="apple-touch-icon" sizes="180x180" href="/assets/favicon/apple-touch-icon.png" />
+    <meta name="apple-mobile-web-app-title" content="James I" />
+    <link rel="manifest" href="/assets/favicon/site.webmanifest" />
+    <!-- Privacy-friendly analytics -->
+    <script async src="/assets/js/analytics.js"></script>
+    <script>
+      window.plausible=window.plausible||function(){(plausible.q=plausible.q||[]).push(arguments)},plausible.init=plausible.init||function(i){plausible.o=i||{}};
+      plausible.init()
+    </script>
+    <script>
+      document.addEventListener('DOMContentLoaded', function() {
+        // Smooth scrolling for anchor links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+          anchor.addEventListener('click', function (e) {
+            const href = this.getAttribute('href');
+            if (href === '#') return;
+
+            const target = document.querySelector(href);
+            if (target) {
+              e.preventDefault();
+              target.scrollIntoView({
+                behavior: 'smooth',
+                block: 'start'
+              });
+            }
+          });
+        });
+
+        // Plausible event tracking for buttons and links
+        document.querySelectorAll('a[data-plausible-event]').forEach(element => {
+          element.addEventListener('click', function() {
+            const eventName = this.getAttribute('data-plausible-event');
+            if (window.plausible && eventName) {
+              plausible(eventName);
+            }
+          });
+        });
+
+        // Project description toggle
+        document.querySelectorAll('.project-description-container').forEach(container => {
+          const description = container.querySelector('.project-description');
+          const toggle = container.querySelector('.project-toggle');
+          const toggleText = toggle.querySelector('.toggle-text');
+          
+          // Check if text is clamped
+          if (description.scrollHeight > description.clientHeight) {
+            toggle.classList.remove('hidden');
+          }
+
+          toggle.addEventListener('click', function() {
+            const isExpanded = description.classList.contains('line-clamp-2');
+            
+            if (isExpanded) {
+              description.classList.remove('line-clamp-2');
+              description.style.maxHeight = description.scrollHeight + 'px';
+              toggleText.textContent = 'Read less';
+            } else {
+              description.style.maxHeight = null;
+              description.classList.add('line-clamp-2');
+              toggleText.textContent = 'Read more...';
+            }
+          });
+        });
+      });
+    </script>
+  </head>
+  <body class="bg-[#F3F3F3] text-primaryText font-body" id="top">
+    <a
+      href="#main-content"
+      class="fixed left-0 top-0 z-50 bg-[#010A49] text-white px-4 py-2 -translate-y-full focus:translate-y-0 transition-transform"
+      >Skip to main content</a
+    >
+    <main id="main-content" class="max-w-5xl mx-auto p-6"><!-- Logo and Navigation -->
+<div class="grid md:grid-cols-2 gap-12 mb-20 items-center">
+  <div class="text-3xl font-display"><a href="/" aria-label="James Inman home" class="focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-primaryText transition-opacity hover:opacity-70">JI.</a></div>
+  <nav aria-label="Main navigation">
+    <ul class="flex items-center gap-8 text-[21px] font-medium leading-[120%] tracking-[-0.03em]">
+      
+      <li>
+        <a href="/" class="focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-primaryText ">
+          
+          <span class="hover:border-b-2 hover:border-primaryText pb-1 pr-0.5 transition-all ">About</span><span class="ml-0.25">.</span>
+          
+        </a>
+      </li>
+      
+      <li>
+        <a href="/neurodiversity-coaching-and-technology-mentoring" class="focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-primaryText ">
+          
+          <span class="hover:border-b-2 hover:border-primaryText pb-1 pr-0.5 transition-all ">Coaching</span><span class="ml-0.25">.</span>
+          
+        </a>
+      </li>
+      
+      <li>
+        <a href="/latest" aria-current="page" class="focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-primaryText ">
+          
+          <span class="hover:border-b-2 hover:border-primaryText pb-1 pr-0.5 transition-all border-b-2 border-primaryText">Latest</span><span class="ml-0.25">.</span>
+          
+        </a>
+      </li>
+      
+      <li>
+        <a href="https://www.linkedin.com/in/jamesfinman/" target="_blank" rel="noopener noreferrer" class="focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-primaryText hover:opacity-70 transition-opacity">
+          
+          <svg class="inline-block w-6 h-6" width="24" height="24" fill="#1f2937" viewBox="0 0 24 24" role="img" aria-label="LinkedIn"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z" /></svg>
+          
+        </a>
+      </li>
+      
+    </ul>
+  </nav>
+</div>
+
+<!-- Hero Section -->
+<header class="mb-16">
+  <div class="grid md:grid-cols-2 gap-12 mb-16">
+    <div class="flex flex-col justify-between">
+      <h1 class="text-[60px] font-display font-medium mb-8 leading-[97%] tracking-[-0.03em]">Latest.</h1>
+      <div class="flex items-center h-[48px]">
+        <a href="#projects-section" class="text-[#010A49] hover:opacity-70 transition-opacity cursor-pointer" aria-label="Scroll to projects section">
+          <svg width="28" height="44" viewBox="0 0 28 44" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+            <path d="M14 0L14 36M14 36L8 30M14 36L20 30" stroke="currentColor" stroke-width="3.5" />
+          </svg>
+        </a>
+      </div>
+    </div>
+    <div class="flex flex-col justify-between">
+      <p class="text-[32px] text-secondaryText font-sans font-normal mb-6 leading-[1.55] tracking-[-0.03em]">
+        Recent <strong>projects</strong> I'm working on, things I find interesting, and <strong>thoughts</strong> on technology, psychology, and the intersection of the two.
+      </p>
+    </div>
+  </div>
+</header>
+
+<!-- Recent Projects Section -->
+<section id="projects-section" class="mb-20">
+  <h2 class="text-[20px] font-body font-medium mb-6 uppercase leading-[122%] tracking-[-0.03em]">Recent Projects</h2>
+  <div class="space-y-4">
+    
+    
+    <div class="bg-white border border-cardBorder rounded p-6 hover:shadow-md transition-shadow">
+      <div class="flex flex-col md:flex-row md:items-start md:justify-between gap-4">
+        <div class="flex-1">
+          <h3 class="text-2xl font-body font-medium mb-1">
+            <a href="https://github.com/Homebrew/homebrew-core/pull/259557" target="_blank" rel="noopener" class="text-[#010A49] hover:opacity-70 transition-opacity">
+              Added octodns formula to Homebrew
+              <svg class="inline-block w-4 h-4 ml-1" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"></path>
+              </svg>
+            </a>
+          </h3>
+          
+          <div class="project-description-container">
+            <p class="text-secondaryText text-base font-body mb-2 project-description line-clamp-2"><p>Contributed the octodns formula to Homebrew, making it easier for users to install and manage DNS records as code using the octoDNS toolkit. Run <code class="language-plaintext highlighter-rouge">brew install octodns</code> to get started.</p>
+</p>
+            <button class="text-sm text-[#010A49] hover:opacity-70 transition-opacity project-toggle hidden" aria-label="Toggle description">
+              <span class="toggle-text">Read more...</span>
+            </button>
+          </div>
+          
+          
+<div class="flex flex-wrap gap-2 mt-3">
+  
+  
+  
+  
+  
+  <span class="inline-flex items-center gap-1.5 px-2.5 py-1 bg-white border border-cardBorder text-sm text-secondaryText rounded">
+    <img src="https://cdn.simpleicons.org/ruby/1f2937" alt="" class="w-4 h-4" onerror="this.style.display='none'" aria-hidden="true" />
+    <span>Ruby</span>
+  </span>
+  
+  
+  
+  
+  
+  <span class="inline-flex items-center gap-1.5 px-2.5 py-1 bg-white border border-cardBorder text-sm text-secondaryText rounded">
+    <img src="https://cdn.simpleicons.org/opensourceinitiative/1f2937" alt="" class="w-4 h-4" onerror="this.style.display='none'" aria-hidden="true" />
+    <span>Open Source</span>
+  </span>
+  
+</div>
+
+        </div>
+        <div class="text-secondaryText text-sm font-body shrink-0">
+          December 20, 2024
+        </div>
+      </div>
+    </div>
+    
+  </div>
+</section>
+
+<hr class="border-t border-cardBorder mb-20" />
+
+<!-- Blog Posts Section -->
+<section class="mb-20">
+  <h2 class="text-[20px] font-body font-medium mb-6 uppercase leading-[122%] tracking-[-0.03em]">Posts</h2>
+  
+  
+  <p class="text-lg text-secondaryText font-body">No posts yet. Check back soon!</p>
+  
+</section>
+
+<hr class="border-t border-cardBorder mb-20" />
+
+<!-- Footer CTA Section -->
+<section class="grid md:grid-cols-2 gap-12 mb-8 items-center">
+  <div>
+    <p class="text-[32px] text-secondaryText font-sans font-normal leading-[117%] tracking-[-0.03em]">
+      Want to talk through a project, explore mentoring and coaching, or discuss a collaboration? →
+    </p>
+  </div>
+  <div class="flex flex-col items-end justify-center gap-2">
+    <a href="https://tidycal.com/jamesinman/20-minute-introduction-call" target="_blank" rel="noopener" class="inline-block bg-[#010A49] hover:opacity-90 text-white font-medium py-3 px-6 font-body text-base transition-all hover:shadow-lg focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-primaryText" data-plausible-event="Book Intro Call (Footer)">
+      Book a 20 minute intro call →
+    </a>
+    <a href="mailto:james@wilderotter.co.uk" class="inline-block text-primaryText hover:opacity-70 py-3 px-6 font-body text-base transition-opacity focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-primaryText" data-plausible-event="Email Click (Footer)">
+      Email me →
+    </a>
+  </div>
+</section>
+
+</main>
+    <footer class="text-center text-sm pb-8 px-4 md:px-0">
+  © 2026 James Inman
+  <div class="text-3xl font-display mt-4 mb-4"><a href="#top" class="hover:opacity-70 transition-opacity">JI.</a></div>
+  Technology consultancy services are offered through Otaina Limited (company number 15019458).<br class="hidden md:block" /><span
+    class="md:hidden"
+  >
+    &middot; </span
+  >Coaching and mentoring services are offered through Wilder Otter Limited (company number 98765432).<br class="hidden md:block" /><span
+    class="md:hidden"
+  >
+    &middot; </span
+  >Both registered in England at Ground Floor, Kings House, 101-135 Kings Road, Brentwood, Essex, United Kingdom, CM14 4DR.
+</footer>
+<script data-collect-dnt="true" async src="https://scripts.simpleanalyticscdn.com/latest.js"></script>
+<noscript><img src="https://queue.simpleanalyticscdn.com/noscript.gif?collect-dnt=true" alt="" referrerpolicy="no-referrer-when-downgrade"/></noscript>
+
+  </body>
+</html>

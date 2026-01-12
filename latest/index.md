@@ -10,7 +10,7 @@ page_title: Latest
 <header class="mb-16">
   <div class="grid md:grid-cols-2 gap-12 mb-16">
     <div class="flex flex-col justify-between">
-      <h1 class="text-[60px] font-display font-medium mb-8 leading-[97%] tracking-[-0.03em]">Tech & Thoughts.</h1>
+      <h1 class="text-[60px] font-display font-medium mb-8 leading-[97%] tracking-[-0.03em]">Latest.</h1>
       <div class="flex items-center h-[48px]">
         <a href="#projects-section" class="text-[#010A49] hover:opacity-70 transition-opacity cursor-pointer" aria-label="Scroll to projects section">
           <svg width="28" height="44" viewBox="0 0 28 44" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
@@ -21,7 +21,7 @@ page_title: Latest
     </div>
     <div class="flex flex-col justify-between">
       <p class="text-[32px] text-secondaryText font-sans font-normal mb-6 leading-[1.55] tracking-[-0.03em]">
-        A collection of <strong>projects</strong> I've worked on and <strong>thoughts</strong> on technology, mental health, and the intersection of the two.
+        Recent <strong>projects</strong> I'm working on, things I find interesting, and <strong>thoughts</strong> on technology, psychology, and the intersection of the two.
       </p>
     </div>
   </div>
@@ -36,7 +36,7 @@ page_title: Latest
     <div class="bg-white border border-cardBorder rounded p-6 hover:shadow-md transition-shadow">
       <div class="flex flex-col md:flex-row md:items-start md:justify-between gap-4">
         <div class="flex-1">
-          <h3 class="text-xl font-body font-medium mb-1">
+          <h3 class="text-2xl font-body font-medium mb-1">
             <a href="{{ project.link }}" target="_blank" rel="noopener" class="text-[#010A49] hover:opacity-70 transition-opacity">
               {{ project.title }}
               <svg class="inline-block w-4 h-4 ml-1" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
@@ -46,7 +46,7 @@ page_title: Latest
           </h3>
           {% if project.description %}
           <div class="project-description-container">
-            <p class="text-secondaryText text-base font-body mb-2 project-description line-clamp-2">{{ project.description }}</p>
+            <p class="text-secondaryText text-base font-body mb-2 project-description line-clamp-2">{{ project.description | markdownify }}</p>
             <button class="text-sm text-[#010A49] hover:opacity-70 transition-opacity project-toggle hidden" aria-label="Toggle description">
               <span class="toggle-text">Read more...</span>
             </button>
@@ -75,7 +75,7 @@ page_title: Latest
     <div class="bg-white border border-cardBorder rounded p-6 hover:shadow-md transition-shadow">
       <div class="flex flex-col md:flex-row md:items-start md:justify-between gap-4">
         <div class="flex-1">
-          <h3 class="text-xl font-body font-medium mb-1">
+          <h3 class="text-2xl font-body font-medium mb-1">
             <a href="{{ site.baseurl }}{{ post.url }}" class="text-[#010A49] hover:opacity-70 transition-opacity">
               {{ post.title }}
             </a>

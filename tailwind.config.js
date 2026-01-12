@@ -4,7 +4,7 @@ module.exports = {
     './_layouts/**/*.html',
     './_includes/**/*.html',
     './neurodiversity-coaching-and-technology-mentoring/**/*.md',
-    './projects-and-thoughts/**/*.md',
+    './latest/**/*.md',
     './tech-and-thoughts/**/*.md',
     './_posts/**/*.md',
     './index.md'

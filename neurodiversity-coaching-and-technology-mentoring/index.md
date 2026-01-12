@@ -1,6 +1,7 @@
 ---
 layout: default
-title: Mentoring & Coaching
+title: Coaching
+page_title: Coaching
 ---
 
 {% include header.html %}
