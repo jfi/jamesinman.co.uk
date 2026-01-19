@@ -1,146 +1,20 @@
-<!doctype html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Coaching &middot; James Inman</title>
-    <link href="/assets/css/main.css" rel="stylesheet" />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500&family=Playfair+Display:wght@400;700&family=DM+Sans:wght@400&display=swap"
-      rel="stylesheet"
-    />
-    <link rel="icon" type="image/png" href="/assets/favicon/favicon-96x96.png" sizes="96x96" />
-    <link rel="icon" type="image/svg+xml" href="/assets/favicon/favicon.svg" />
-    <link rel="shortcut icon" href="/assets/favicon/favicon.ico" />
-    <link rel="apple-touch-icon" sizes="180x180" href="/assets/favicon/apple-touch-icon.png" />
-    <meta name="apple-mobile-web-app-title" content="James I" />
-    <link rel="manifest" href="/assets/favicon/site.webmanifest" />
-    <!-- Markdown source -->
-    
-      
-      
-      <link rel="alternate" type="text/markdown" title="Markdown Source" href="/neurodiversity-coaching-and-technology-mentoring/index.md">
-    
-    <!-- Privacy-friendly analytics -->
-    <script async src="/assets/js/analytics.js"></script>
-    <script>
-      window.plausible=window.plausible||function(){(plausible.q=plausible.q||[]).push(arguments)},plausible.init=plausible.init||function(i){plausible.o=i||{}};
-      plausible.init()
-    </script>
-    <script>
-      document.addEventListener('DOMContentLoaded', function() {
-        // Smooth scrolling for anchor links
-        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-          anchor.addEventListener('click', function (e) {
-            const href = this.getAttribute('href');
-            if (href === '#') return;
+---
+layout: default
+title: Coaching
+page_title: Coaching
+---
 
-            const target = document.querySelector(href);
-            if (target) {
-              e.preventDefault();
-              target.scrollIntoView({
-                behavior: 'smooth',
-                block: 'start'
-              });
-            }
-          });
-        });
-
-        // Plausible event tracking for buttons and links
-        document.querySelectorAll('a[data-plausible-event]').forEach(element => {
-          element.addEventListener('click', function() {
-            const eventName = this.getAttribute('data-plausible-event');
-            if (window.plausible && eventName) {
-              plausible(eventName);
-            }
-          });
-        });
-
-        // Project description toggle
-        document.querySelectorAll('.project-description-container').forEach(container => {
-          const description = container.querySelector('.project-description');
-          const toggle = container.querySelector('.project-toggle');
-          const toggleText = toggle.querySelector('.toggle-text');
-          
-          // Check if text is clamped
-          if (description.scrollHeight > description.clientHeight) {
-            toggle.classList.remove('hidden');
-          }
-
-          toggle.addEventListener('click', function() {
-            const isExpanded = description.classList.contains('line-clamp-2');
-            
-            if (isExpanded) {
-              description.classList.remove('line-clamp-2');
-              description.style.maxHeight = description.scrollHeight + 'px';
-              toggleText.textContent = 'Read less';
-            } else {
-              description.style.maxHeight = null;
-              description.classList.add('line-clamp-2');
-              toggleText.textContent = 'Read more...';
-            }
-          });
-        });
-      });
-    </script>
-  </head>
-  <body class="bg-[#F3F3F3] text-primaryText font-body" id="top">
-    <a
-      href="#main-content"
-      class="fixed left-0 top-0 z-50 bg-[#010A49] text-white px-4 py-2 -translate-y-full focus:translate-y-0 transition-transform"
-      >Skip to main content</a
-    >
-    <main id="main-content" class="max-w-5xl mx-auto p-6"><!-- Logo and Navigation -->
-<div class="grid md:grid-cols-2 gap-12 mb-20 items-center">
-  <div class="text-3xl font-display"><a href="/" aria-label="James Inman home" class="focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-primaryText transition-opacity hover:opacity-70">JI.</a></div>
-  <nav aria-label="Main navigation">
-    <ul class="flex items-center gap-8 text-[21px] font-medium leading-[120%] tracking-[-0.03em]">
-      
-      <li>
-        <a href="/" class="focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-primaryText ">
-          
-          <span class="hover:border-b-2 hover:border-primaryText pb-1 pr-0.5 transition-all ">About</span><span class="ml-0.25">.</span>
-          
-        </a>
-      </li>
-      
-      <li>
-        <a href="/neurodiversity-coaching-and-technology-mentoring" aria-current="page" class="focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-primaryText ">
-          
-          <span class="hover:border-b-2 hover:border-primaryText pb-1 pr-0.5 transition-all border-b-2 border-primaryText">Coaching</span><span class="ml-0.25">.</span>
-          
-        </a>
-      </li>
-      
-      <li>
-        <a href="/latest" class="focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-primaryText ">
-          
-          <span class="hover:border-b-2 hover:border-primaryText pb-1 pr-0.5 transition-all ">Latest</span><span class="ml-0.25">.</span>
-          
-        </a>
-      </li>
-      
-      <li>
-        <a href="https://www.linkedin.com/in/jamesfinman/" target="_blank" rel="noopener noreferrer" class="focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-primaryText hover:opacity-70 transition-opacity">
-          
-          <svg class="inline-block w-6 h-6" width="24" height="24" fill="#1f2937" viewBox="0 0 24 24" role="img" aria-label="LinkedIn"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z" /></svg>
-          
-        </a>
-      </li>
-      
-    </ul>
-  </nav>
-</div>
+{% include header.html %}
 
 <!-- Hero Section -->
 <header class="mb-16">
   <div class="grid md:grid-cols-2 gap-12 mb-16">
     <div class="flex flex-col justify-between">
-      <h1 class="text-[60px] font-display font-medium mb-8 leading-[97%] tracking-[-0.03em]">Mentoring &amp; Coaching.</h1>
+      <h1 class="text-[60px] font-display font-medium mb-8 leading-[97%] tracking-[-0.03em]">Mentoring & Coaching.</h1>
       <div class="flex items-center h-[48px]">
         <a href="#intro-section" class="hover:opacity-70 transition-opacity cursor-pointer" aria-label="Scroll to introduction section">
           <svg width="28" height="44" viewBox="0 0 28 44" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
-            <path d="M14 0L14 36M14 36L8 30M14 36L20 30" stroke="currentColor" stroke-width="3.5" />
+            <path d="M14 0L14 36M14 36L8 30M14 36L20 30" stroke="currentColor" stroke-width="3.5"/>
           </svg>
         </a>
       </div>
@@ -150,10 +24,14 @@
         Get support from someone who understands — both <strong>professionally</strong> and <strong>personally</strong>. I can help you navigate challenges or complex transitions, and gain insight into your strengths.
       </p>
       <div class="flex gap-4">
-        <a href="https://tidycal.com/jamesinman/20-minute-introduction-call" target="_blank" rel="noopener" class="inline-block bg-[#010A49] hover:opacity-90 text-white font-medium py-3 px-6 font-body text-base transition-all hover:shadow-lg focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-primaryText" data-plausible-event="Book Intro Call (MC)">
+        <a href="https://tidycal.com/jamesinman/20-minute-introduction-call" target="_blank" rel="noopener"
+          class="inline-block bg-[#010A49] hover:opacity-90 text-white font-medium py-3 px-6 font-body text-base transition-all hover:shadow-lg focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-primaryText"
+          data-plausible-event="Book Intro Call (MC)">
           Book a call →
         </a>
-        <a href="mailto:james@wilderotter.co.uk" class="inline-block text-primaryText hover:opacity-70 py-3 px-6 font-body text-base transition-opacity focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-primaryText" data-plausible-event="Email Click (MC)">
+        <a href="mailto:james@wilderotter.co.uk"
+          class="inline-block text-primaryText hover:opacity-70 py-3 px-6 font-body text-base transition-opacity focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-primaryText"
+          data-plausible-event="Email Click (MC)">
           Email me →
         </a>
       </div>
@@ -164,7 +42,7 @@
 <!-- Photo and Intro Section -->
 <section id="intro-section" class="grid md:grid-cols-2 gap-12 mb-16 items-start">
   <div>
-    <img src="/assets/images/headshot-2.jpg" alt="James Inman" class="w-full h-[400px] object-cover object-center rounded" />
+    <img src="{{ site.baseurl }}/assets/images/headshot-2.jpg" alt="James Inman" class="w-full h-[400px] object-cover object-center rounded" />
   </div>
   <div class="flex flex-col justify-between h-[400px]">
     <p class="text-lg text-secondaryText font-body font-normal leading-[1.55]">
@@ -179,12 +57,12 @@
   </div>
 </section>
 
-<hr class="border-t border-cardBorder mb-20" />
+<hr class="border-t border-cardBorder mb-20">
 
 <!-- Service Areas -->
 <section class="grid md:grid-cols-2 gap-12 mb-20">
   <div>
-    <h2 class="text-[20px] font-body font-medium mb-4 uppercase leading-[122%] tracking-[-0.03em]">ADHD, Autism &amp; Neurodiversity</h2>
+    <h2 class="text-[20px] font-body font-medium mb-4 uppercase leading-[122%] tracking-[-0.03em]">ADHD, Autism & Neurodiversity</h2>
     <p class="text-lg text-secondaryText font-body mb-4 leading-relaxed">
       <strong>Support for neurodivergent people — from someone who's walked a similar path</strong>
     </p>
@@ -210,7 +88,7 @@
   </div>
 </section>
 
-<hr class="border-t border-cardBorder mb-20" />
+<hr class="border-t border-cardBorder mb-20">
 
 <!-- Service Areas -->
 <section class="grid md:grid-cols-2 gap-12 mb-20">
@@ -228,7 +106,7 @@
   </div>
 
   <div>
-    <h2 class="text-[20px] font-body font-medium mb-4 uppercase leading-[122%] tracking-[-0.03em]">"Resilience &amp; Bouncing Back" Seminar</h2>
+    <h2 class="text-[20px] font-body font-medium mb-4 uppercase leading-[122%] tracking-[-0.03em]">"Resilience & Bouncing Back" Seminar</h2>
     <p class="text-lg text-secondaryText font-body mb-4 leading-relaxed">
       <strong>Ideal for businesses and small groups — a practical guide for overcoming challenges</strong>
     </p>
@@ -241,11 +119,11 @@
   </div>
 </section>
 
-<hr class="border-t border-cardBorder mb-20" />
+<hr class="border-t border-cardBorder mb-20">
 
 <!-- Pricing Section -->
 <section class="mb-20">
-  <h2 class="text-[20px] font-body font-medium mb-6 uppercase leading-[122%] tracking-[-0.03em]">Pricing &amp; Booking</h2>
+  <h2 class="text-[20px] font-body font-medium mb-6 uppercase leading-[122%] tracking-[-0.03em]">Pricing & Booking</h2>
   <p class="text-lg text-secondaryText font-body mb-4 leading-relaxed">
     1:1 sessions last one hour (60 minutes) via Zoom. I'll usually ask for cameras on at the start just to say hello — but you're free to turn them off if that feels more comfortable. We can also split sessions into two blocks with a break if an hour feels too long to focus for.
   </p>
@@ -271,7 +149,7 @@
   </p>
 </section>
 
-<hr class="border-t border-cardBorder mb-20" />
+<hr class="border-t border-cardBorder mb-20">
 
 <!-- FAQs Section -->
 <section class="mb-20">
@@ -313,41 +191,4 @@
   </div>
 </section>
 
-<hr class="border-t border-cardBorder mb-20" />
-
-<!-- Footer CTA Section -->
-<section class="grid md:grid-cols-2 gap-12 mb-8 items-center">
-  <div>
-    <p class="text-[32px] text-secondaryText font-sans font-normal leading-[117%] tracking-[-0.03em]">
-      Want to talk through a project, explore mentoring and coaching, or discuss a collaboration? →
-    </p>
-  </div>
-  <div class="flex flex-col items-end justify-center gap-2">
-    <a href="https://tidycal.com/jamesinman/20-minute-introduction-call" target="_blank" rel="noopener" class="inline-block bg-[#010A49] hover:opacity-90 text-white font-medium py-3 px-6 font-body text-base transition-all hover:shadow-lg focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-primaryText" data-plausible-event="Book Intro Call (Footer)">
-      Book a 20 minute intro call →
-    </a>
-    <a href="mailto:james@wilderotter.co.uk" class="inline-block text-primaryText hover:opacity-70 py-3 px-6 font-body text-base transition-opacity focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-primaryText" data-plausible-event="Email Click (Footer)">
-      Email me →
-    </a>
-  </div>
-</section>
-
-</main>
-    <footer class="text-center text-sm pb-8 px-4 md:px-0">
-  © 2026 James Inman
-  <div class="text-3xl font-display mt-4 mb-4"><a href="#top" class="hover:opacity-70 transition-opacity">JI.</a></div>
-  Technology consultancy services are offered through Otaina Limited (company number 15019458).<br class="hidden md:block" /><span
-    class="md:hidden"
-  >
-    &middot; </span
-  >Coaching and mentoring services are offered through Wilder Otter Limited (company number 98765432).<br class="hidden md:block" /><span
-    class="md:hidden"
-  >
-    &middot; </span
-  >Both registered in England at Ground Floor, Kings House, 101-135 Kings Road, Brentwood, Essex, United Kingdom, CM14 4DR.
-</footer>
-<script data-collect-dnt="true" async src="https://scripts.simpleanalyticscdn.com/latest.js"></script>
-<noscript><img src="https://queue.simpleanalyticscdn.com/noscript.gif?collect-dnt=true" alt="" referrerpolicy="no-referrer-when-downgrade"/></noscript>
-
-  </body>
-</html>
+{% include footer-cta.html %}

@@ -56,6 +56,58 @@ jobs:
         run: bundle exec jekyll build --baseurl "${{ steps.pages.outputs.base_path }}"
         env:
           JEKYLL_ENV: production
+      - name: Copy markdown source files
+        run: |
+          echo "Copying markdown source files to _site..."
+
+          # Copy post markdown files (for future blog posts)
+          if [ -d "_posts" ] && [ "$(ls -A _posts/*.md 2>/dev/null)" ]; then
+            find _posts -type f \( -name "*.md" -o -name "*.markdown" \) | while read file; do
+              filename=$(basename "$file")
+              if [[ $filename =~ ^([0-9]{4})-([0-9]{2})-([0-9]{2})-(.+)\.(md|markdown)$ ]]; then
+                year="${BASH_REMATCH[1]}"
+                month="${BASH_REMATCH[2]}"
+                day="${BASH_REMATCH[3]}"
+                slug="${BASH_REMATCH[4]}"
+                dest="_site/${year}/${month}/${day}/${slug}.md"
+                mkdir -p "$(dirname "$dest")"
+                cp "$file" "$dest"
+                echo "✓ Copied: $file -> $dest"
+              fi
+            done
+          fi
+
+          # Copy root index.md
+          if [ -f "index.md" ]; then
+            cp "index.md" "_site/index.md"
+            echo "✓ Copied: index.md -> _site/index.md"
+          fi
+
+          # Copy directory-based pages (e.g., latest/index.md, coaching/index.md)
+          find . -type f -name "index.md" \
+            ! -path "./_posts/*" \
+            ! -path "./_site/*" \
+            ! -path "./node_modules/*" \
+            ! -path "./.git/*" \
+            ! -path "./_*" | while read file; do
+            clean_path="${file#./}"
+            dest="_site/${clean_path}"
+            mkdir -p "$(dirname "$dest")"
+            cp "$file" "$dest"
+            echo "✓ Copied: $file -> $dest"
+          done
+
+          # Copy pages directory (e.g., pages/tech-for-good.md)
+          if [ -d "pages" ]; then
+            find pages -type f \( -name "*.md" -o -name "*.markdown" \) | while read file; do
+              dest="_site/${file}"
+              mkdir -p "$(dirname "$dest")"
+              cp "$file" "$dest"
+              echo "✓ Copied: $file -> $dest"
+            done
+          fi
+
+          echo "Markdown source files copied successfully!"
       - name: Upload artifact
         # Automatically uploads an artifact from the './_site' directory by default
         uses: actions/upload-pages-artifact@v3
