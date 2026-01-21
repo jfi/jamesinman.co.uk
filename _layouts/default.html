@@ -16,15 +16,15 @@
     <meta name="apple-mobile-web-app-title" content="James I" />
     <link rel="manifest" href="{{ site.baseurl }}/assets/favicon/site.webmanifest" />
     <!-- Markdown source -->
-    {% if page.path %}
-      {% assign md_url = page.url %}
-      {% if md_url contains '.html' %}
-        {% assign md_url = md_url | replace: '.html', '.md' %}
-      {% else %}
-        {% assign md_url = md_url | append: 'index.md' %}
-      {% endif %}
+    {%- if page.path -%}
+      {%- assign md_url = page.url -%}
+      {%- if md_url contains '.html' -%}
+        {%- assign md_url = md_url | replace: '.html', '.md' -%}
+      {%- else -%}
+        {%- assign md_url = md_url | append: 'index.md' -%}
+      {%- endif -%}
       <link rel="alternate" type="text/markdown" title="Markdown Source" href="{{ site.baseurl }}{{ md_url }}">
-    {% endif %}
+    {%- endif -%}
     <!-- Privacy-friendly analytics -->
     <script async src="{{ site.baseurl }}/assets/js/analytics.js"></script>
     <script>
