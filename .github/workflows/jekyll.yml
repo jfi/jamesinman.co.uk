@@ -89,7 +89,7 @@ jobs:
             ! -path "./_site/*" \
             ! -path "./node_modules/*" \
             ! -path "./.git/*" \
-            ! -path "./_*" | while read file; do
+            ! -path "./_layouts/*" ! -path "./_includes/*" ! -path "./_sass/*" ! -path "./_data/*" | while read file; do
             clean_path="${file#./}"
             dest="_site/${clean_path}"
             mkdir -p "$(dirname "$dest")"
