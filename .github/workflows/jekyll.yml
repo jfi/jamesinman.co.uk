@@ -65,7 +65,7 @@ jobs:
             local src="$1"
             local dest="$2"
             
-            # Use awk to process the file
+            # Use awk and sed to process the file
             awk '
               BEGIN { in_frontmatter=0; frontmatter_ended=0; title=""; meta_desc=""; meta_keywords="" }
               
@@ -96,12 +96,12 @@ jobs:
               # Skip other front matter lines
               in_frontmatter==1 { next }
               
-              # Skip Liquid template syntax
+              # Skip lines that are purely Liquid template tags (start with {%)
               frontmatter_ended==1 && /^{%/ { next }
               
               # Output all other lines after front matter
               frontmatter_ended==1 { print }
-            ' "$src" > "$dest"
+            ' "$src" | sed -E 's/\{\{[^}]+\}\}//g; s/\{%[^%]+%\}//g' > "$dest"
           }
 
           # Copy post markdown files (for future blog posts)
