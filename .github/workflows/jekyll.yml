@@ -56,9 +56,53 @@ jobs:
         run: bundle exec jekyll build --baseurl "${{ steps.pages.outputs.base_path }}"
         env:
           JEKYLL_ENV: production
-      - name: Copy markdown source files
+      - name: Process and copy markdown source files
         run: |
-          echo "Copying markdown source files to _site..."
+          echo "Processing and copying markdown source files to _site..."
+
+          # Function to process markdown files - strip front matter except title and meta tags
+          process_markdown() {
+            local src="$1"
+            local dest="$2"
+            
+            # Use awk to process the file
+            awk '
+              BEGIN { in_frontmatter=0; frontmatter_ended=0; title=""; meta_desc=""; meta_keywords="" }
+              
+              # Start of front matter
+              /^---$/ && NR==1 { in_frontmatter=1; next }
+              
+              # End of front matter
+              /^---$/ && in_frontmatter==1 { 
+                in_frontmatter=0
+                frontmatter_ended=1
+                # Output minimal front matter with only title and meta tags
+                if (title != "" || meta_desc != "" || meta_keywords != "") {
+                  print "---"
+                  if (title != "") print title
+                  if (meta_desc != "") print meta_desc
+                  if (meta_keywords != "") print meta_keywords
+                  print "---"
+                  print ""
+                }
+                next
+              }
+              
+              # Capture title and meta tags from front matter
+              in_frontmatter==1 && /^title:/ { title=$0; next }
+              in_frontmatter==1 && /^meta_description:/ { meta_desc=$0; next }
+              in_frontmatter==1 && /^meta_keywords:/ { meta_keywords=$0; next }
+              
+              # Skip other front matter lines
+              in_frontmatter==1 { next }
+              
+              # Skip Liquid template syntax
+              frontmatter_ended==1 && /^{%/ { next }
+              
+              # Output all other lines after front matter
+              frontmatter_ended==1 { print }
+            ' "$src" > "$dest"
+          }
 
           # Copy post markdown files (for future blog posts)
           if [ -d "_posts" ] && [ "$(ls -A _posts/*.md 2>/dev/null)" ]; then
@@ -71,16 +115,16 @@ jobs:
                 slug="${BASH_REMATCH[4]}"
                 dest="_site/${year}/${month}/${day}/${slug}.md"
                 mkdir -p "$(dirname "$dest")"
-                cp "$file" "$dest"
-                echo "✓ Copied: $file -> $dest"
+                process_markdown "$file" "$dest"
+                echo "✓ Processed: $file -> $dest"
               fi
             done
           fi
 
           # Copy root index.md
           if [ -f "index.md" ]; then
-            cp "index.md" "_site/index.md"
-            echo "✓ Copied: index.md -> _site/index.md"
+            process_markdown "index.md" "_site/index.md"
+            echo "✓ Processed: index.md -> _site/index.md"
           fi
 
           # Copy directory-based pages (e.g., latest/index.md, coaching/index.md)
@@ -93,8 +137,8 @@ jobs:
             clean_path="${file#./}"
             dest="_site/${clean_path}"
             mkdir -p "$(dirname "$dest")"
-            cp "$file" "$dest"
-            echo "✓ Copied: $file -> $dest"
+            process_markdown "$file" "$dest"
+            echo "✓ Processed: $file -> $dest"
           done
 
           # Copy pages directory (e.g., pages/tech-for-good.md)
@@ -102,12 +146,12 @@ jobs:
             find pages -type f \( -name "*.md" -o -name "*.markdown" \) | while read file; do
               dest="_site/${file}"
               mkdir -p "$(dirname "$dest")"
-              cp "$file" "$dest"
-              echo "✓ Copied: $file -> $dest"
+              process_markdown "$file" "$dest"
+              echo "✓ Processed: $file -> $dest"
             done
           fi
 
-          echo "Markdown source files copied successfully!"
+          echo "Markdown source files processed successfully!"
       - name: Upload artifact
         # Automatically uploads an artifact from the './_site' directory by default
         uses: actions/upload-pages-artifact@v3
