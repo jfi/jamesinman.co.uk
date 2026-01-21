@@ -67,10 +67,10 @@ jobs:
             
             # Use awk and sed to process the file
             awk '
-              BEGIN { in_frontmatter=0; frontmatter_ended=0; title=""; meta_desc=""; meta_keywords="" }
+              BEGIN { in_frontmatter=0; frontmatter_ended=0; has_frontmatter=0; title=""; meta_desc=""; meta_keywords="" }
               
               # Start of front matter
-              /^---$/ && NR==1 { in_frontmatter=1; next }
+              /^---$/ && NR==1 { in_frontmatter=1; has_frontmatter=1; next }
               
               # End of front matter
               /^---$/ && in_frontmatter==1 { 
@@ -96,8 +96,11 @@ jobs:
               # Skip other front matter lines
               in_frontmatter==1 { next }
               
-              # Skip lines that are purely Liquid template tags (start with {%)
-              frontmatter_ended==1 && /^{%/ { next }
+              # For files without front matter, start outputting from line 1
+              !has_frontmatter && NR==1 { frontmatter_ended=1 }
+              
+              # Skip lines that are purely Liquid template tags (with optional leading whitespace)
+              frontmatter_ended==1 && /^[[:space:]]*{%/ { next }
               
               # Output all other lines after front matter
               frontmatter_ended==1 { print }
