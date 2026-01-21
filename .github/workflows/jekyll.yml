@@ -77,12 +77,6 @@ jobs:
             done
           fi
 
-          # Copy root index.md
-          if [ -f "index.md" ]; then
-            cp "index.md" "_site/index.md"
-            echo "✓ Copied: index.md -> _site/index.md"
-          fi
-
           # Copy directory-based pages (e.g., latest/index.md, coaching/index.md)
           find . -type f -name "index.md" \
             ! -path "./_posts/*" \
