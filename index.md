@@ -1,6 +1,6 @@
 ---
 layout: default
-title: Mentoring, Coaching, Neurodiversity & Tech-For-Good
+title: Technology, Charity & Open Source
 id: home
 ---
 
@@ -21,18 +21,18 @@ id: home
     </div>
     <div class="flex flex-col justify-between">
       <p class="text-[32px] text-secondaryText font-sans font-normal mb-6 leading-[1.55] tracking-[-0.03em]">
-        I work at the intersection of <strong>technology, mental health,</strong> and <strong>psychology</strong> — helping organisations and individuals make a difference through their work and in their lives.
+        I <strong>build software</strong>, contribute to <strong>open source</strong>, and use technology to support <strong>charities</strong> and the people they serve — with over 15 years of experience in engineering, leadership, psychology and mental health.
       </p>
       <div class="flex gap-4">
-        <a href="https://tidycal.com/jamesinman/20-minute-introduction-call" target="_blank" rel="noopener"
+        <a href="{{ site.baseurl }}/latest"
           class="inline-block bg-[#010A49] hover:opacity-90 text-white font-medium py-3 px-6 font-body text-base transition-all hover:shadow-lg focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-primaryText"
-          data-plausible-event="Book Intro Call (Home)">
-          Book a call →
+          data-plausible-event="See My Work (Home)">
+          See my work →
         </a>
-        <a href="mailto:james@wilderotter.co.uk"
+        <a href="mailto:james@jamesinman.co.uk"
           class="inline-block text-[#010A49] hover:opacity-70 py-3 px-6 font-body text-base transition-opacity focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-primaryText"
           data-plausible-event="Email Click (Home)">
-          Email me →
+          Get in touch →
         </a>
       </div>
     </div>
@@ -44,55 +44,34 @@ id: home
   <div>
     <img src="{{ site.baseurl }}/assets/images/headshot.jpg" alt="James Inman - portrait photo" class="w-full h-[400px] object-cover rounded" />
   </div>
-  <div class="flex flex-col justify-between h-[400px]">
+  <div class="flex flex-col justify-center gap-8 h-[400px]">
     <p class="text-lg text-secondaryText font-body font-normal leading-[1.55]">
-      With over 15 years in software and leadership, I've founded companies from scratch, seen some acquired, and held Board-level roles running technology and product teams in international private equity‑backed businesses. I'm also late-diagnosed with Autism and ADHD, and have studied psychology and mental health intensively.
+      I'm a software engineer and technical leader with over 15 years of experience building products, leading teams, and shipping code. I've founded companies, held Board‑level roles in PE‑backed businesses, and recently, I've built the technology behind <a href="https://neurobetter.org" class="text-primaryText font-medium underline hover:opacity-70">neurobetter</a> — a charity I co‑founded to support neurodivergent people struggling with their mental health.
     </p>
     <p class="text-lg text-secondaryText font-body font-normal leading-[1.55]">
-      Not every venture went to plan, and not every choice I made was the right one. Along the way I've learned a great deal about resilience, perspective, and how to adapt. That experience now drives my work — helping purpose‑driven organisations solve complex problems, and supporting people as they navigate their own challenges.
+      Today, I help organisations make the most of technology, build open‑source tools, and figure out what to actually do with AI – from strategy to build.
+    </p>
+    <p class="text-lg text-secondaryText font-body font-normal leading-[1.55]">
+      I'm also training in psychodynamic psychotherapy, because understanding how people think matters as much as how systems work.
     </p>
   </div>
 </section>
 
 <hr class="border-t border-cardBorder mb-20">
 
-<!-- Mentoring & Coaching Section -->
+<!-- What I Build Section -->
 <section class="grid md:grid-cols-2 gap-12 mb-20 items-center">
   <div>
-    <h2 class="text-[20px] font-body font-medium mb-4 uppercase leading-[122%] tracking-[-0.03em]">MENTORING & COACHING</h2>
+    <h2 class="text-[20px] font-body font-medium mb-4 uppercase leading-[122%] tracking-[-0.03em]">WHAT I BUILD</h2>
     <p class="text-lg text-secondaryText font-body mb-4 leading-relaxed">
-      I work one‑on‑one with people who need clarity, direction, and someone who truly "gets it" — mentoring and coaching rooted in lived experience of leadership, neurodiversity, and rebuilding after challenge.
+      I work primarily with Ruby, Rails, JavaScript, and TypeScript — building everything from developer tools and API integrations to full SaaS platforms. I contribute to open source, maintain published gems, and care deeply about code quality, testing, and infrastructure.
     </p>
     <p class="text-lg text-secondaryText font-body mb-6 leading-relaxed">
-      Whether you're navigating technology leadership, understanding your autism or ADHD, or working out your next career steps, I can help you find perspective and make a plan for what's next.
+      Recent work includes an open‑source CMS, charity website auditing tools, MCP server integrations, and DNS tooling adopted into Homebrew. I write about the things I learn along the way.
     </p>
-    <a href="{{ site.baseurl }}/neurodiversity-coaching-and-technology-mentoring" class="inline-block bg-white border border-[#010A49] hover:bg-gray-50 text-[#010A49] font-medium py-3 px-6 font-body text-base transition-all hover:shadow-md focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-primaryText" data-plausible-event="Mentoring Learn More">Learn more →</a>
+    <a href="{{ site.baseurl }}/latest" class="inline-block bg-white border border-[#010A49] hover:bg-gray-50 text-[#010A49] font-medium py-3 px-6 font-body text-base transition-all hover:shadow-md focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-primaryText" data-plausible-event="What I Build Learn More">See recent projects →</a>
   </div>
   <div>
-    <img src="https://images.unsplash.com/uploads/14122810486321888a497/1b0cc699?w=800&h=600&fit=crop" alt="Two people having a mentoring conversation" class="w-full h-[400px] object-cover rounded" />
-  </div>
-</section>
-
-<hr class="border-t border-cardBorder mb-20">
-
-<!-- Tech For Good Section -->
-<section class="grid md:grid-cols-2 gap-12 mb-20 items-center">
-  <div class="md:order-2">
-    <h2 class="text-[20px] font-body font-medium mb-4 uppercase leading-[122%] tracking-[-0.03em]">TECH FOR GOOD</h2>
-    <p class="text-lg text-secondaryText font-body mb-4 leading-relaxed">
-      I partner with charities, non‑profits, and purpose‑driven organisations to untangle complex systems and make technology work — offering practical strategy and hands‑on support grounded in years of experience.
-    </p>
-    <p class="text-lg text-secondaryText font-body mb-6 leading-relaxed">
-      Whether you need clarity on your digital direction, someone to rescue a development project, or practical support dealing with information security and sensitive data, I can help you get there.
-    </p>
-    <a href="https://otaina.co.uk" target="_blank" rel="noopener" class="inline-block bg-white border border-[#010A49] hover:bg-gray-50 text-[#010A49] font-medium py-3 px-6 font-body text-base transition-all hover:shadow-md focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-primaryText" aria-label="Learn more about Tech For Good (opens in new window)">
-      Learn more
-      <svg class="inline-block w-4 h-4 ml-1" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
-        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"></path>
-      </svg>
-    </a>
-  </div>
-  <div class="md:order-1">
     <img src="https://images.unsplash.com/photo-1522071820081-009f0129c71c?w=800&h=600&fit=crop" alt="Team collaborating on a technology project" class="w-full h-[400px] object-cover rounded" />
   </div>
 </section>
@@ -101,13 +80,13 @@ id: home
 
 <!-- Neurobetter Section -->
 <section class="grid md:grid-cols-2 gap-12 mb-20 items-center">
-  <div>
+  <div class="md:order-2">
     <h2 class="text-[20px] font-body font-medium mb-4 uppercase leading-[122%] tracking-[-0.03em]">NEUROBETTER</h2>
     <p class="text-lg text-secondaryText font-body mb-4 leading-relaxed">
-      I'm the Founding Trustee of neurobetter, a new charity supporting neurodivergent people with their mental health — through training, resources, and advocacy built on lived experience and evidence‑based practice.
+      I'm the Founder of neurobetter, a registered charity supporting neurodivergent people with their mental health. I built the technology platform from scratch and lead both the technical direction and the charity's governance as a trustee.
     </p>
     <p class="text-lg text-secondaryText font-body mb-6 leading-relaxed">
-      Whether you're an organisation looking to create a truly inclusive culture, or you're seeking support around mental health and neurodiversity for yourself or someone you know, neurobetter is here to help.
+      neurobetter provides training, resources, and advocacy grounded in lived experience and evidence‑based practice — helping both individuals and the organisations that support them.
     </p>
     <a href="https://neurobetter.org" target="_blank" rel="noopener" class="inline-block bg-white border border-[#010A49] hover:bg-gray-50 text-[#010A49] font-medium py-3 px-6 font-body text-base transition-all hover:shadow-md focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-primaryText" aria-label="Learn more about neurobetter (opens in new window)">
       Learn more
@@ -116,8 +95,51 @@ id: home
       </svg>
     </a>
   </div>
-  <div class="bg-[#010A49] flex items-center justify-center h-[400px] rounded p-12">
+  <div class="md:order-1 bg-[#010A49] flex items-center justify-center h-[400px] rounded p-12">
     <img src="{{ site.baseurl }}/assets/images/neurobetter-logo.png" alt="neurobetter logo" class="h-24 object-contain" />
+  </div>
+</section>
+
+<hr class="border-t border-cardBorder mb-20">
+
+<!-- Tech For Good Section -->
+<section class="grid md:grid-cols-2 gap-12 mb-20 items-center">
+  <div>
+    <h2 class="text-[20px] font-body font-medium mb-4 uppercase leading-[122%] tracking-[-0.03em]">TECH FOR GOOD</h2>
+    <p class="text-lg text-secondaryText font-body mb-4 leading-relaxed">
+      Through <a href="https://otaina.co.uk" target="_blank" rel="noopener" class="text-primaryText font-medium underline hover:opacity-70">Otaina</a>, I partner with charities, non‑profits, and purpose‑driven organisations to untangle complex systems and make technology work — offering practical strategy and hands‑on delivery.
+    </p>
+    <p class="text-lg text-secondaryText font-body mb-6 leading-relaxed">
+      Whether you need clarity on your digital direction, someone to rescue a development project, or practical support with information security and sensitive data, I can help.
+    </p>
+    <a href="https://otaina.co.uk" target="_blank" rel="noopener" class="inline-block bg-white border border-[#010A49] hover:bg-gray-50 text-[#010A49] font-medium py-3 px-6 font-body text-base transition-all hover:shadow-md focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-primaryText" aria-label="Learn more about Tech For Good (opens in new window)">
+      Learn more
+      <svg class="inline-block w-4 h-4 ml-1" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"></path>
+      </svg>
+    </a>
+  </div>
+  <div>
+    <img src="https://images.unsplash.com/photo-1531545514256-b1400bc00f31?w=800&h=600&fit=crop" alt="People working together on a community technology project" class="w-full h-[400px] object-cover rounded" />
+  </div>
+</section>
+
+<hr class="border-t border-cardBorder mb-20">
+
+<!-- Mentoring & Coaching Section -->
+<section class="grid md:grid-cols-2 gap-12 mb-20 items-center">
+  <div class="md:order-2">
+    <h2 class="text-[20px] font-body font-medium mb-4 uppercase leading-[122%] tracking-[-0.03em]">MENTORING & COACHING</h2>
+    <p class="text-lg text-secondaryText font-body mb-4 leading-relaxed">
+      Alongside my technical work, I mentor and coach people navigating technology leadership, neurodiversity, and career transitions — drawing on lived experience of late diagnosis, founding companies, and rebuilding after setbacks.
+    </p>
+    <p class="text-lg text-secondaryText font-body mb-6 leading-relaxed">
+      Whether you're working out your next career steps, understanding your ADHD or autism, or need someone who genuinely gets it, I can help you find perspective and make a plan.
+    </p>
+    <a href="{{ site.baseurl }}/neurodiversity-coaching-and-technology-mentoring" class="inline-block bg-white border border-[#010A49] hover:bg-gray-50 text-[#010A49] font-medium py-3 px-6 font-body text-base transition-all hover:shadow-md focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-primaryText" data-plausible-event="Mentoring Learn More">Learn more →</a>
+  </div>
+  <div class="md:order-1">
+    <img src="https://images.unsplash.com/uploads/14122810486321888a497/1b0cc699?w=800&h=600&fit=crop" alt="Two people having a mentoring conversation" class="w-full h-[400px] object-cover rounded" />
   </div>
 </section>
 
@@ -132,11 +154,14 @@ id: home
       <li class="pl-2">Member of the Royal Society of Public Health (MRSPH)</li>
       <li class="pl-2">Student Member of the British Psychological Society (BPS)</li>
       <li class="pl-2">Student Member of the British Association for Counselling and Psychotherapy (BACP)</li>
+      <li class="pl-2">Do-IT Neurodiversity Champion</li>
     </ul>
     <ul class="text-secondaryText text-base space-y-2 list-disc pl-5">
       <li class="pl-2">MA in Couple and Individual Psychodynamic Psychotherapy <span class="text-sm">(in progress)</span></li>
-      <li class="pl-2">MSc Psychology <span class="text-sm">(awaiting award)</span></li>
+      <li class="pl-2">MSc Psychology</li>
       <li class="pl-2">LLB (Hons) undergraduate degree in Law</li>
+      <li class="pl-2">CertHE in Web Applications Development</li>
+      <li class="pl-2">CertHE in Software Engineering</li>
       <li class="pl-2">Level 2 Certificate in Introduction to Counselling</li>
       <li class="pl-2">Level 2 Certificate in Self-Harm and Suicide Awareness and Prevention</li>
     </ul>

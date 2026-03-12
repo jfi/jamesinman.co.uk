@@ -33,6 +33,7 @@ page_title: Latest
   <div class="space-y-4">
     {% assign sorted_projects = site.data.projects | sort: "date" | reverse %}
     {% for project in sorted_projects %}
+    {% unless project.draft %}
     <div class="bg-white border border-cardBorder rounded p-6 hover:shadow-md transition-shadow">
       <div class="flex flex-col md:flex-row md:items-start md:justify-between gap-4">
         <div class="flex-1">
@@ -59,6 +60,7 @@ page_title: Latest
         </div>
       </div>
     </div>
+    {% endunless %}
     {% endfor %}
   </div>
 </section>
@@ -81,7 +83,7 @@ page_title: Latest
             </a>
           </h3>
           {% if post.excerpt %}
-          <p class="text-secondaryText text-base font-body mb-2 line-clamp-2">{{ post.excerpt | strip_html | truncate: 160 }}</p>
+          <p class="text-secondaryText text-base font-body mb-2 line-clamp-3">{{ post.excerpt | strip_html | truncate: 280 }}</p>
           {% endif %}
           {% include tag-icons.html tags=post.tags %}
         </div>

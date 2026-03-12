@@ -1,0 +1,154 @@
+/* Rouge syntax highlighting — dark theme for bg-gray-900 code blocks */
+
+/* Ensure code inside highlighted blocks doesn't get the inline code styling */
+.highlight pre code,
+pre.highlight code {
+  background: transparent;
+  padding: 0;
+  border-radius: 0;
+  font-size: 0.875rem;
+  line-height: 1.7;
+}
+
+.highlight pre,
+pre.highlight {
+  background: #111827;
+  color: #e5e7eb;
+  padding: 1.5rem;
+  border-radius: 0.375rem;
+  overflow-x: auto;
+  margin-bottom: 1.5rem;
+  font-size: 0.875rem;
+  line-height: 1.7;
+}
+
+/* Comments */
+.highlight .c,
+.highlight .c1,
+.highlight .cm,
+.highlight .cs,
+.highlight .ch,
+.highlight .cp,
+.highlight .cpf,
+.highlight .sd {
+  color: #6b7280;
+  font-style: italic;
+}
+
+/* Keywords */
+.highlight .k,
+.highlight .kc,
+.highlight .kd,
+.highlight .kn,
+.highlight .kp,
+.highlight .kr,
+.highlight .kt,
+.highlight .kv {
+  color: #f472b6;
+}
+
+/* Strings */
+.highlight .s,
+.highlight .s1,
+.highlight .s2,
+.highlight .sb,
+.highlight .sc,
+.highlight .sh,
+.highlight .sx,
+.highlight .dl {
+  color: #a5d6a7;
+}
+
+/* Numbers */
+.highlight .m,
+.highlight .mi,
+.highlight .mf,
+.highlight .mh,
+.highlight .mo,
+.highlight .mb,
+.highlight .mx,
+.highlight .il {
+  color: #c4b5fd;
+}
+
+/* Names / identifiers */
+.highlight .n,
+.highlight .nb,
+.highlight .ni,
+.highlight .ne,
+.highlight .nd,
+.highlight .nt,
+.highlight .nl,
+.highlight .nn {
+  color: #93c5fd;
+}
+
+/* Class names and constants */
+.highlight .nc,
+.highlight .no {
+  color: #67e8f9;
+}
+
+/* Functions and methods */
+.highlight .nf,
+.highlight .fm {
+  color: #fbbf24;
+}
+
+/* Variables and instance variables */
+.highlight .nv,
+.highlight .vi,
+.highlight .vc,
+.highlight .vg,
+.highlight .vm {
+  color: #f9a8d4;
+}
+
+/* Operators */
+.highlight .o,
+.highlight .ow {
+  color: #f472b6;
+}
+
+/* Punctuation */
+.highlight .p {
+  color: #d1d5db;
+}
+
+/* Symbols (Ruby) */
+.highlight .ss {
+  color: #a5d6a7;
+}
+
+/* Regular expressions */
+.highlight .sr {
+  color: #fca5a5;
+}
+
+/* Interpolation */
+.highlight .si {
+  color: #fbbf24;
+}
+
+/* YAML keys / attributes */
+.highlight .na,
+.highlight .py {
+  color: #93c5fd;
+}
+
+/* Tag names in HTML/XML */
+.highlight .nt {
+  color: #f472b6;
+}
+
+/* Error */
+.highlight .err {
+  color: #fca5a5;
+}
+
+/* Generic styles */
+.highlight .gd { color: #fca5a5; }
+.highlight .gi { color: #a5d6a7; }
+.highlight .ge { font-style: italic; }
+.highlight .gs { font-weight: bold; }
+.highlight .gl { text-decoration: underline; }

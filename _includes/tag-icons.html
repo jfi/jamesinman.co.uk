@@ -16,7 +16,7 @@
       {% assign display_name = tag_name | replace: '-', ' ' | capitalize %}
     {% endif %}
   {% else %}
-    {% assign display_name = tag_name | replace: '-', ' ' | capitalize %}
+    {% assign display_name = tag_name %}
   {% endif %}
   <span class="inline-flex items-center gap-1.5 px-2.5 py-1 bg-white border border-cardBorder text-sm text-secondaryText rounded">
     <img

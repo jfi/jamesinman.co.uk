@@ -1,11 +1,84 @@
 # Recent Projects - displayed in descending order by date
 # Tag icons come from Simple Icons (https://simpleicons.org)
-# Common tags: ruby, rails, opensource, python, openai, javascript, postgresql
+# Common tags: ruby:ruby, Ruby on Rails:rubyonrails, opensource, python:python, openai, javascript, postgresql
+# Set draft: true to hide from the public site
+
+- title: 'Panda CMS'
+  link: 'https://github.com/tastybamboo/panda-cms'
+  date: 2026-03-09
+  draft: true
+  description: 'An open-source, modern CMS for Ruby on Rails — simple enough for small sites, powerful enough to scale. Built with Rails 8, Tailwind CSS, and a modular architecture including live editing, content versioning, and a flexible block system.'
+  tags:
+    - ruby:ruby
+    - Ruby on Rails:rubyonrails
+    - opensource
+
+- title: 'Xero MCP Server'
+  link: 'https://github.com/jfi/xero-mcp-server'
+  date: 2026-03-01
+  draft: true
+  description: 'A Model Context Protocol (MCP) server that bridges AI coding assistants to Xero accounting APIs. Enables AI tools like Claude to manage invoices, contacts, and accounts directly through natural language.'
+  tags:
+    - typescript:typescript
+    - opensource
+
+- title: 'Charity Tools'
+  link: 'https://charitytools.co.uk'
+  date: 2026-03-05
+  description: 'A SaaS platform for auditing and managing charity websites — checks domain configuration, email deliverability, SSL certificates, and compliance status. Built with Rails 8 and designed to help small charities get the basics right.'
+  tags:
+    - ruby:ruby
+    - Ruby on Rails:rubyonrails
+    - Tailwind CSS:tailwindcss
+    - Ansible:ansible
+    - Terraform:terraform
+
+- title: 'Xero Reconciliation Automation'
+  link: 'https://github.com/jfi/xero-reconciliation'
+  date: 2026-03-01
+  draft: true
+  description: 'Playwright-based automation for Xero bank reconciliation — a practical workaround for the missing Finance API endpoint, built in Ruby with headless browser automation.'
+  tags:
+    - ruby:ruby
+    - opensource
+
+- title: 'claude-code-notify'
+  link: 'https://github.com/mylee04/code-notify'
+  date: 2026-01-21
+  draft: true
+  description: 'Desktop notifications for Claude Code — get alerts when long-running tasks complete, with automatic tab switching. A small quality-of-life tool for AI-assisted development workflows.'
+  tags:
+    - opensource
+
+- title: 'Mythic Beasts Ruby Gem'
+  link: 'https://rubygems.org/gems/mythic-beasts'
+  date: 2025-12-17
+  description: 'Ruby client library for the Mythic Beasts API — DNS record management, VPS provisioning, and domain administration. Published on RubyGems.'
+  tags:
+    - ruby:ruby
+    - opensource
+
+- title: 'octodns-mythicbeasts'
+  link: 'https://github.com/tastybamboo/octodns-mythicbeasts'
+  date: 2025-12-20
+  draft: true
+  description: 'An octoDNS provider for Mythic Beasts DNS, enabling DNS-as-code with OAuth2 authentication. Published on PyPI.'
+  tags:
+    - python:python
+    - opensource
 
 - title: 'Added octodns formula to Homebrew'
   link: 'https://github.com/Homebrew/homebrew-core/pull/259557'
   date: 2024-12-20
+  draft: true
   description: 'Contributed the octodns formula to Homebrew, making it easier for users to install and manage DNS records as code using the octoDNS toolkit. Run `brew install octodns` to get started.'
   tags:
-    - ruby:ruby
+    - opensource
+
+- title: 'My Medical Records'
+  link: 'https://github.com/neurobetter/mymedicalrecords.org.uk'
+  date: 2025-10-09
+  draft: true
+  description: 'A personal medical data management tool built under neurobetter — helping people take control of their health records. Static site with Jekyll and Tailwind CSS, hosted on GitHub Pages.'
+  tags:
     - opensource

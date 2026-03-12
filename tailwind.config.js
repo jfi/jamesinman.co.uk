@@ -5,7 +5,6 @@ module.exports = {
     './_includes/**/*.html',
     './neurodiversity-coaching-and-technology-mentoring/**/*.md',
     './latest/**/*.md',
-    './tech-and-thoughts/**/*.md',
     './_posts/**/*.md',
     './index.md'
   ],

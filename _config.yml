@@ -1,5 +1,5 @@
 title: James Inman
-description: technology, mental health, and psychology
+description: software engineering, open source, and charity
 baseurl: ''
 url: 'https://jamesinman.co.uk'
 markdown: kramdown
@@ -16,12 +16,12 @@ navigation:
   - title: About
     url: /
     page_id: home
-  - title: Coaching
-    url: /neurodiversity-coaching-and-technology-mentoring
-    page_title: Coaching
   - title: Latest
     url: /latest
     page_title: Latest
+  - title: Coaching
+    url: /neurodiversity-coaching-and-technology-mentoring
+    page_title: Coaching
   - title: LinkedIn
     url: https://www.linkedin.com/in/jamesfinman/
     page_title: LinkedIn
